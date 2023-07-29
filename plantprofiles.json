@@ -1,0 +1,4256 @@
+[{
+  "_id": {
+    "$oid": "5f3cfb375a59ab19382bc5f1"
+  },
+  "plantId": 101,
+  "plantName": "Sastry Park DMRC Depot",
+  "location": {
+    "name": "Shahdara, Delhi-110053",
+    "type": "point",
+    "coordinates": [
+      28.674362,
+      77.243693
+    ]
+  },
+  "owner": "Purshotam Rays Power P LTD",
+  "commissioningDate": {
+    "$date": "2020-02-29T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-12-31T18:29:59.000Z"
+  },
+  "unitPrice": 6.35,
+  "plantCapacity": 2528.21,
+  "PVModules": {
+    "quantity": "",
+    "make": "Waree",
+    "wattage": ""
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "sonu@purshotamgroup.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 43,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Sungrow",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Sungrow",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 4,
+        "name": "Inverter 4",
+        "make": "Sungrow",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 5,
+        "name": "Inverter 5",
+        "make": "Sungrow",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 6,
+        "name": "Inverter 6",
+        "make": "Sungrow",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 7,
+        "name": "Inverter 7",
+        "make": "Sungrow",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 8,
+        "name": "Inverter 8",
+        "make": "Sungrow",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 9,
+        "name": "Inverter 9",
+        "make": "Sungrow",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 10,
+        "name": "Inverter 10",
+        "make": "Sungrow",
+        "capacity": 71,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 11,
+        "name": "Inverter 11",
+        "make": "Sungrow",
+        "capacity": 70.7,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 13,
+        "name": "Inverter 13",
+        "make": "Sungrow",
+        "capacity": 70.7,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 14,
+        "name": "Inverter 14",
+        "make": "Sungrow",
+        "capacity": 70.7,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 16,
+        "name": "Inverter 16",
+        "make": "Sungrow",
+        "capacity": 71,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 17,
+        "name": "Inverter 17",
+        "make": "Sungrow",
+        "capacity": 71,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 18,
+        "name": "Inverter 18",
+        "make": "Sungrow",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": "3"
+      },
+      {
+        "id": 19,
+        "name": "Inverter 19",
+        "make": "Sungrow",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": "3"
+      },
+      {
+        "id": 20,
+        "name": "Inverter 20",
+        "make": "Sungrow",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": "",
+        "MPPT": 3,
+        "string": 9,
+        "building": "SBL-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": "3"
+      },
+      {
+        "id": 21,
+        "name": "Inverter 21",
+        "make": "Sungrow",
+        "capacity": 60,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 10,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": "4"
+      },
+      {
+        "id": 22,
+        "name": "Inverter 22",
+        "make": "Sungrow",
+        "capacity": 33,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 6,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": "4"
+      },
+      {
+        "id": 23,
+        "name": "Inverter 23",
+        "make": "Sungrow",
+        "capacity": 64.79,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 11,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": "4"
+      },
+      {
+        "id": 24,
+        "name": "Inverter 24",
+        "make": "Sungrow",
+        "capacity": 54,
+        "modelNo": "SGKTL 50",
+        "serialNo": null,
+        "MPPT": 5,
+        "string": 10,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 25,
+        "name": "Inverter 25",
+        "make": "Sungrow",
+        "capacity": 65.21,
+        "modelNo": "SGKTL 50",
+        "serialNo": null,
+        "MPPT": 5,
+        "string": 11,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 26,
+        "name": "Inverter 26",
+        "make": "Sungrow",
+        "capacity": 65.21,
+        "modelNo": "SGKTL 50",
+        "serialNo": null,
+        "MPPT": 5,
+        "string": 10,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 27,
+        "name": "Inverter 27",
+        "make": "Sungrow",
+        "capacity": 57.96,
+        "modelNo": "SGKTL 50",
+        "serialNo": null,
+        "MPPT": 5,
+        "string": 10,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 28,
+        "name": "Inverter 28",
+        "make": "Sungrow",
+        "capacity": 26.46,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 5,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 29,
+        "name": "Inverter 29",
+        "make": "Sungrow",
+        "capacity": 29.45,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 0,
+        "building": "WS-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 30,
+        "name": "Inverter 30",
+        "make": "Sungrow",
+        "capacity": 58.9,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 0,
+        "building": "WS-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 31,
+        "name": "Inverter 31",
+        "make": "Sungrow",
+        "capacity": 64.79,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 0,
+        "building": "WS-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 32,
+        "name": "Inverter 32",
+        "make": "Sungrow",
+        "capacity": 58.9,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 0,
+        "building": "WS-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 33,
+        "name": "Inverter 33",
+        "make": "Sungrow",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 10,
+        "building": "ICSL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 34,
+        "name": "Inverter 34",
+        "make": "Sungrow",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 11,
+        "building": "ICSL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 35,
+        "name": "Inverter 35",
+        "make": "Sungrow",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 10,
+        "building": "ICSL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 37,
+        "name": "Inverter 37",
+        "make": "Sungrow",
+        "capacity": 43.92,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 10,
+        "building": "DCOS",
+        "buildingType": "RCC",
+        "dataLoggerNo": 8
+      },
+      {
+        "id": 38,
+        "name": "Inverter 38",
+        "make": "Sungrow",
+        "capacity": 43.92,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 6,
+        "building": "DCOS",
+        "buildingType": "RCC",
+        "dataLoggerNo": 8
+      },
+      {
+        "id": 39,
+        "name": "Inverter 39",
+        "make": "Delta",
+        "capacity": 31.72,
+        "modelNo": "RPI-M 30",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 6,
+        "building": "ETU",
+        "buildingType": "RCC",
+        "dataLoggerNo": 9
+      },
+      {
+        "id": 40,
+        "name": "Inverter 40",
+        "make": "Sungrow",
+        "capacity": 58.59,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 10,
+        "building": "O&N",
+        "buildingType": "RCC",
+        "dataLoggerNo": 10
+      },
+      {
+        "id": 41,
+        "name": "Inverter 41",
+        "make": "Sungrow",
+        "capacity": 14.64,
+        "modelNo": "SGKTL 20",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 3,
+        "building": "ASS-1",
+        "buildingType": "RCC",
+        "dataLoggerNo": 11
+      },
+      {
+        "id": 44,
+        "name": "Inverter 44",
+        "make": "Delta",
+        "capacity": 61,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 14
+      },
+      {
+        "id": 45,
+        "name": "Inverter 45",
+        "make": "Delta",
+        "capacity": 61,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 14
+      },
+      {
+        "id": 47,
+        "name": "Inverter 47",
+        "make": "Delta",
+        "capacity": 73.2,
+        "modelNo": "SGKTL 70",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 5,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 14
+      },
+      {
+        "id": 48,
+        "name": "Inverter 48",
+        "make": "Delta",
+        "capacity": 61,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 14
+      },
+      {
+        "id": 49,
+        "name": "Inverter 49",
+        "make": "Delta",
+        "capacity": 67.1,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 14
+      },
+      {
+        "id": 51,
+        "name": "Inverter 51",
+        "make": "Delta",
+        "capacity": 67.1,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 5,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 14
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 12,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "SBL-1",
+        "deviceConnected": 6
+      },
+      {
+        "id": 2,
+        "name": "D-LOG 2",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "SBL 2",
+        "deviceConnected": 6
+      },
+      {
+        "id": 3,
+        "name": "D-LOG 3",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "SBL-3",
+        "deviceConnected": 8
+      },
+      {
+        "id": 4,
+        "name": "D-LOG 4",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "Workshop-1",
+        "deviceConnected": 4
+      },
+      {
+        "id": 5,
+        "name": "D-LOG 5",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "Workshop-2",
+        "deviceConnected": 4
+      },
+      {
+        "id": 6,
+        "name": "D-LOG 6",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "Workshop-3",
+        "deviceConnected": 4
+      },
+      {
+        "id": 7,
+        "name": "D-LOG 7",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "ICSL",
+        "deviceConnected": 4
+      },
+      {
+        "id": 8,
+        "name": "D-LOG 8",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "DCOS",
+        "deviceConnected": 2
+      },
+      {
+        "id": 9,
+        "name": "D-LOG 9",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "ETU",
+        "deviceConnected": 1
+      },
+      {
+        "id": 10,
+        "name": "D-LOG 10",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "O&N",
+        "deviceConnected": 1
+      },
+      {
+        "id": 11,
+        "name": "D-LOG 11",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "ASS-1",
+        "deviceConnected": 1
+      },
+      {
+        "id": 14,
+        "name": "D-LOG 14",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "IBL",
+        "deviceConnected": 6
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f4b78c2d9097e13dc3e45b9"
+  },
+  "plantId": 106,
+  "plantName": "Mukundpur DMRC Depot",
+  "location": {
+    "name": "Model Town, New Delhi-110033",
+    "type": "point",
+    "coordinates": [
+      28.7215617,
+      77.1863469
+    ]
+  },
+  "owner": "Purshotam Rays Power P LTD",
+  "commissioningDate": {
+    "$date": "2020-07-17T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-12-31T18:29:59.000Z"
+  },
+  "unitPrice": 6.35,
+  "plantCapacity": 1481.03,
+  "PVModules": {
+    "quantity": "",
+    "make": "",
+    "wattage": ""
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "sonu@purshotamgroup.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 33,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Delta",
+        "capacity": 54,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "DCOS-1",
+        "buildingType": "RCC",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Delta",
+        "capacity": 32.2,
+        "modelNo": "M30A",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 6,
+        "building": "DCOS-1",
+        "buildingType": "RCC",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 3,
+        "name": "Inverter 3",
+        "make": "Delta",
+        "capacity": 28.8,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 6,
+        "building": "DCOS-2",
+        "buildingType": "RCC",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 4,
+        "name": "Inverter 4",
+        "make": "Delta",
+        "capacity": 48,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 10,
+        "building": "DCOS-2",
+        "buildingType": "RCC",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 5,
+        "name": "Inverter 5",
+        "make": "Delta",
+        "capacity": 48,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 10,
+        "building": "ETU",
+        "buildingType": "RCC",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 6,
+        "name": "Inverter 6",
+        "make": "Delta",
+        "capacity": 48,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 10,
+        "building": "ETU",
+        "buildingType": "RCC",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 7,
+        "name": "Inverter 7",
+        "make": "Delta",
+        "capacity": 56.7,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 8,
+        "name": "Inverter 8",
+        "make": "Delta",
+        "capacity": 69.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 9,
+        "name": "Inverter 9",
+        "make": "Delta",
+        "capacity": 63,
+        "modelNo": "M40A",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 11,
+        "name": "Inverter 11",
+        "make": "Delta",
+        "capacity": 50.4,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 12,
+        "name": "Inverter 12",
+        "make": "Delta",
+        "capacity": 69.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 13,
+        "name": "Inverter 13",
+        "make": "Delta",
+        "capacity": 63,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 14,
+        "name": "Inverter 14",
+        "make": "Delta",
+        "capacity": 19.84,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 4,
+        "building": "WS-3",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 15,
+        "name": "Inverter 15",
+        "make": "Delta",
+        "capacity": 36,
+        "modelNo": "M30A",
+        "serialNo": null,
+        "MPPT": 1,
+        "string": 6,
+        "building": "IBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 16,
+        "name": "Inverter 16",
+        "make": "Delta",
+        "capacity": 48,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 17,
+        "name": "Inverter 17",
+        "make": "Delta",
+        "capacity": 54,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 18,
+        "name": "Inverter 18",
+        "make": "Delta",
+        "capacity": 51.6,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 19,
+        "name": "Inverter 19",
+        "make": "Delta",
+        "capacity": 60,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 20,
+        "name": "Inverter 20",
+        "make": "Delta",
+        "capacity": 39.6,
+        "modelNo": "M40A",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 9,
+        "building": "IBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 6
+      },
+      {
+        "id": 21,
+        "name": "Inverter 21",
+        "make": "Delta",
+        "capacity": 52.2,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "SBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 22,
+        "name": "Inverter 22",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "SBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 23,
+        "name": "Inverter 23",
+        "make": "Delta",
+        "capacity": 19.2,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 4,
+        "building": "SBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 24,
+        "name": "Inverter 24",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "SBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 25,
+        "name": "Inverter 25",
+        "make": "Delta",
+        "capacity": 50.63,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "SBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 26,
+        "name": "Inverter 26",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "SBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 27,
+        "name": "Inverter 27",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "SBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 28,
+        "name": "Inverter 28",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "SBL",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 7
+      },
+      {
+        "id": 29,
+        "name": "Inverter 29",
+        "make": "Delta",
+        "capacity": 54,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "CLN",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 8
+      },
+      {
+        "id": 30,
+        "name": "Inverter 30",
+        "make": "Delta",
+        "capacity": 30,
+        "modelNo": "M30A",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 5,
+        "building": "CLN",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 8
+      },
+      {
+        "id": 31,
+        "name": "Inverter 31",
+        "make": "Delta",
+        "capacity": 30,
+        "modelNo": "M30A",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 5,
+        "building": "CLN",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 8
+      },
+      {
+        "id": 32,
+        "name": "Inverter 32",
+        "make": "Delta",
+        "capacity": 24,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 4,
+        "building": "ASS",
+        "buildingType": "RCC",
+        "dataLoggerNo": 9
+      },
+      {
+        "id": 33,
+        "name": "Inverter 33",
+        "make": "Delta",
+        "capacity": 24,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 6,
+        "building": "PWAY",
+        "buildingType": "RCC",
+        "dataLoggerNo": 10
+      },
+      {
+        "id": 34,
+        "name": "Inverter 34",
+        "make": "Delta",
+        "capacity": 30.6,
+        "modelNo": "M30A",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 6,
+        "building": "RSS",
+        "buildingType": "RCC",
+        "dataLoggerNo": 10
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 11,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 21x",
+        "serialNo": "HO-DL212-096",
+        "building": "DCOS",
+        "deviceConnected": 4
+      },
+      {
+        "id": 2,
+        "name": "D-LOG 2",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K101030",
+        "building": "ETU",
+        "deviceConnected": 2
+      },
+      {
+        "id": 3,
+        "name": "D-LOG 3",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K301102",
+        "building": "WS-1",
+        "deviceConnected": 3
+      },
+      {
+        "id": 4,
+        "name": "D-LOG 4",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-DL212-035",
+        "building": "WS-2",
+        "deviceConnected": 5
+      },
+      {
+        "id": 5,
+        "name": "D-LOG 5",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K101034",
+        "building": "WS-3",
+        "deviceConnected": 2
+      },
+      {
+        "id": 6,
+        "name": "D-LOG 6",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 21x",
+        "serialNo": "HO-DL212-095",
+        "building": "IBL",
+        "deviceConnected": 6
+      },
+      {
+        "id": 7,
+        "name": "D-LOG 7",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K301101",
+        "building": "SBL",
+        "deviceConnected": 8
+      },
+      {
+        "id": 8,
+        "name": "D-LOG 8",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K301069",
+        "building": "CLN",
+        "deviceConnected": 3
+      },
+      {
+        "id": 9,
+        "name": "D-LOG 9",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K301082",
+        "building": "ASS",
+        "deviceConnected": 1
+      },
+      {
+        "id": 10,
+        "name": "D-LOG 10",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-P101019",
+        "building": "PWAY",
+        "deviceConnected": 1
+      },
+      {
+        "id": 11,
+        "name": "D-LOG 11",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K101018",
+        "building": "RSS",
+        "deviceConnected": 1
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f4c7dac4cd35f1f94eb277f"
+  },
+  "plantId": 102,
+  "plantName": "Samaypur Badli DMRC",
+  "location": {
+    "name": "Badli, Rohini, New Delhi-110042",
+    "type": "point",
+    "coordinates": [
+      28.747431,
+      77.17368
+    ]
+  },
+  "owner": "Purshotam Rays Power P LTD",
+  "commissioningDate": {
+    "$date": "2020-07-17T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-12-31T18:29:59.000Z"
+  },
+  "unitPrice": 6.35,
+  "plantCapacity": 171,
+  "PVModules": {
+    "quantity": "",
+    "make": "",
+    "wattage": ""
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "sonu@purshotamgroup.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 4,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "PF-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Delta",
+        "capacity": 34.2,
+        "modelNo": "M30A",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 6,
+        "building": "PF-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 3,
+        "name": "Inverter 3",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "PF-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 4,
+        "name": "Inverter 4",
+        "make": "Delta",
+        "capacity": 34.2,
+        "modelNo": "M30A",
+        "serialNo": null,
+        "MPPT": 3,
+        "string": 6,
+        "building": "PF-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K301064",
+        "building": "PF-2",
+        "deviceConnected": 4
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f4c7dfa4cd35f1f94eb2781"
+  },
+  "plantId": 104,
+  "plantName": "ITO DMRC",
+  "location": {
+    "name": "Rajendra Place, Delhi-110008",
+    "type": "point",
+    "coordinates": [
+      28.6278305,
+      77.24369
+    ]
+  },
+  "owner": "Purshotam Rays Power P LTD",
+  "commissioningDate": {
+    "$date": "2020-07-17T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-12-31T18:29:59.000Z"
+  },
+  "unitPrice": 6.35,
+  "plantCapacity": 8.4,
+  "PVModules": {
+    "quantity": "",
+    "make": "",
+    "wattage": ""
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "sonu@purshotamgroup.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Delta",
+        "capacity": 8.4,
+        "modelNo": "M10A",
+        "serialNo": null,
+        "MPPT": 1,
+        "string": 4,
+        "building": "Roof-1",
+        "buildingType": "RCC",
+        "dataLoggerNo": 1
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": "RSS",
+        "deviceConnected": 1
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f4c7e1c4cd35f1f94eb2782"
+  },
+  "plantId": 105,
+  "plantName": "Kalindi Kunj DMRC Depot",
+  "location": {
+    "name": "Jasola Vihar, Delhi 110025",
+    "type": "point",
+    "coordinates": [
+      28.5445206,
+      77.306926
+    ]
+  },
+  "owner": "Purshotam Rays Power P LTD",
+  "commissioningDate": {
+    "$date": "2020-07-17T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-12-31T18:29:59.000Z"
+  },
+  "unitPrice": 6.35,
+  "plantCapacity": 1070.5,
+  "PVModules": {
+    "quantity": "",
+    "make": null,
+    "wattage": ""
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "sonu@purshotamgroup.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 22,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 3,
+        "name": "Inverter 3",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 4,
+        "name": "Inverter 4",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 5,
+        "name": "Inverter 5",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 6,
+        "name": "Inverter 6",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 7,
+        "name": "Inverter 7",
+        "make": "Delta",
+        "capacity": 28.5,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 8,
+        "name": "Inverter 8",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 9,
+        "name": "Inverter 9",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 10,
+        "name": "Inverter 10",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 11,
+        "name": "Inverter 11",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 12,
+        "name": "Inverter 12",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 13,
+        "name": "Inverter 13",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 14,
+        "name": "Inverter 14",
+        "make": "Delta",
+        "capacity": 28.5,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 4,
+        "building": "IBL-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 4
+      },
+      {
+        "id": 15,
+        "name": "Inverter 15",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 16,
+        "name": "Inverter 16",
+        "make": "Delta",
+        "capacity": 48.6,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 17,
+        "name": "Inverter 17",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 18,
+        "name": "Inverter 18",
+        "make": "Delta",
+        "capacity": 54,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-2",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 3
+      },
+      {
+        "id": 19,
+        "name": "Inverter 19",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 20,
+        "name": "Inverter 20",
+        "make": "Delta",
+        "capacity": 28.5,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 5,
+        "string": 4,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 21,
+        "name": "Inverter 21",
+        "make": "Delta",
+        "capacity": 51.3,
+        "modelNo": "M50A",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 9,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": 5
+      },
+      {
+        "id": 22,
+        "name": "Inverter 22",
+        "make": "Sungrow",
+        "capacity": 61.25,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "MPPT": 4,
+        "string": 8,
+        "building": "WS-1",
+        "buildingType": "Tinshed",
+        "dataLoggerNo": "6"
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 6,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-P101017",
+        "building": "IBL-1",
+        "deviceConnected": 3
+      },
+      {
+        "id": 2,
+        "name": "D-LOG 2",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K101013",
+        "building": "IBL-1",
+        "deviceConnected": 4
+      },
+      {
+        "id": 3,
+        "name": "D-LOG 3",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K101075",
+        "building": "WS-2",
+        "deviceConnected": 3
+      },
+      {
+        "id": 4,
+        "name": "D-LOG 4",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-P101016",
+        "building": "IBL-2",
+        "deviceConnected": 7
+      },
+      {
+        "id": 5,
+        "name": "D-LOG 5",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K101028",
+        "building": "Workshop-1",
+        "deviceConnected": 3
+      },
+      {
+        "id": 6,
+        "name": "D-LOG 6",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-K201001",
+        "building": "Workshop-1",
+        "deviceConnected": 1
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f4c7f534cd35f1f94eb2783"
+  },
+  "plantId": 103,
+  "plantName": "Dhaula Kuan DMRC",
+  "location": {
+    "name": "Dhaula Kuan, New Delhi",
+    "type": "point",
+    "coordinates": [
+      28.5922441,
+      77.1622191
+    ]
+  },
+  "owner": "Purshotam Rays Power P LTD",
+  "commissioningDate": {
+    "$date": "2020-08-21T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-12-31T18:29:59.000Z"
+  },
+  "unitPrice": 6.35,
+  "plantCapacity": 18.6,
+  "PVModules": {
+    "quantity": "",
+    "make": "",
+    "wattage": ""
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "sonu@purshotamgroup.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Delta",
+        "capacity": 18.6,
+        "modelNo": "M20A",
+        "serialNo": null,
+        "MPPT": 2,
+        "string": 4,
+        "building": "RSS",
+        "buildingType": "RCC",
+        "dataLoggerNo": 1
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": "HO-P101021",
+        "building": "RSS",
+        "deviceConnected": 1
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f4ca85945d10f1a104dedf4"
+  },
+  "plantId": 207,
+  "plantName": "11MW Solar Power Plant, Tarana",
+  "location": {
+    "name": "Tarana, Distt- Ujjain M.P-456665",
+    "type": "point",
+    "coordinates": [
+      23.3744444,
+      76.0240952
+    ]
+  },
+  "commissioningDate": {
+    "$date": "2020-08-31T18:30:00.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-08-31T18:30:00.000Z"
+  },
+  "owner": "Vivaan Solar Pvt Ltd",
+  "unitPrice": 6,
+  "plantCapacity": 13750,
+  "PVModules": {
+    "quantity": "41446",
+    "make": "TALESUN",
+    "wattage": "330 kWp,335 kWp"
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "maruti@vivaansolar.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 55,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Sungrow",
+        "capacity": 241.2,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 3,
+        "name": "Inverter 3",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 4,
+        "name": "Inverter 4",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 5,
+        "name": "Inverter 5",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 6,
+        "name": "Inverter 6",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 7,
+        "name": "Inverter 7",
+        "make": "Sungrow",
+        "capacity": 241.2,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 8,
+        "name": "Inverter 8",
+        "make": "Sungrow",
+        "capacity": 241.2,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 9,
+        "name": "Inverter 9",
+        "make": "Sungrow",
+        "capacity": 241.2,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 10,
+        "name": "Inverter 10",
+        "make": "Sungrow",
+        "capacity": 241.2,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 11,
+        "name": "Inverter 11",
+        "make": "Sungrow",
+        "capacity": 241.2,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 12,
+        "name": "Inverter 12",
+        "make": "Sungrow",
+        "capacity": 241.2,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 13,
+        "name": "Inverter 13",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 14,
+        "name": "Inverter 14",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 15,
+        "name": "Inverter 15",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 16,
+        "name": "Inverter 16",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 17,
+        "name": "Inverter 17",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 18,
+        "name": "Inverter 18",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 19,
+        "name": "Inverter 19",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 20,
+        "name": "Inverter 20",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 21,
+        "name": "Inverter 21",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 22,
+        "name": "Inverter 22",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 23,
+        "name": "Inverter 23",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 24,
+        "name": "Inverter 24",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 25,
+        "name": "Inverter 25",
+        "make": "Sungrow",
+        "capacity": 261.3,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 26,
+        "name": "Inverter 26",
+        "make": "Sungrow",
+        "capacity": 160.8,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 27,
+        "name": "Inverter 27",
+        "make": "Sungrow",
+        "capacity": 201,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 28,
+        "name": "Inverter 28",
+        "make": "Sungrow",
+        "capacity": 221.1,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 29,
+        "name": "Inverter 29",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 30,
+        "name": "Inverter 30",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 31,
+        "name": "Inverter 31",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 32,
+        "name": "Inverter 32",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 33,
+        "name": "Inverter 33",
+        "make": "Sungrow",
+        "capacity": 237.6,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 34,
+        "name": "Inverter 34",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 35,
+        "name": "Inverter 35",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 36,
+        "name": "Inverter 36",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 37,
+        "name": "Inverter 37",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 38,
+        "name": "Inverter 38",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 39,
+        "name": "Inverter 39",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 40,
+        "name": "Inverter 40",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 41,
+        "name": "Inverter 41",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 42,
+        "name": "Inverter 42",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 43,
+        "name": "Inverter 43",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 44,
+        "name": "Inverter 44",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 45,
+        "name": "Inverter 45",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 46,
+        "name": "Inverter 46",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 47,
+        "name": "Inverter 47",
+        "make": "Sungrow",
+        "capacity": 217.8,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 48,
+        "name": "Inverter 48",
+        "make": "Sungrow",
+        "capacity": 237.6,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 49,
+        "name": "Inverter 49",
+        "make": "Sungrow",
+        "capacity": 237.6,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 50,
+        "name": "Inverter 50",
+        "make": "Sungrow",
+        "capacity": 237.6,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 51,
+        "name": "Inverter 51",
+        "make": "Sungrow",
+        "capacity": 237.6,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 52,
+        "name": "Inverter 52",
+        "make": "Sungrow",
+        "capacity": 257.4,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 53,
+        "name": "Inverter 53",
+        "make": "Sungrow",
+        "capacity": 237.6,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 54,
+        "name": "Inverter 54",
+        "make": "Sungrow",
+        "capacity": 237.6,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 55,
+        "name": "Inverter 55",
+        "make": "Sungrow",
+        "capacity": 237.6,
+        "modelNo": "SG-250HX-IN",
+        "serialNo": null,
+        "MPPT": null,
+        "string": null,
+        "building": "",
+        "buildingType": null,
+        "dataLoggerNo": 2
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "weatherStation": {
+    "isActive": true,
+    "quantity": 3,
+    "details": [
+      {
+        "id": 1,
+        "isActive": false,
+        "isUpgrade": false,
+        "name": "Weather Station 1",
+        "default": true,
+        "building": "",
+        "configuration": [
+          {
+            "isActive": true,
+            "deviceType": 131,
+            "sensors": [
+              {
+                "isActive": true,
+                "key": "GHI",
+                "name": "GHI",
+                "type": {
+                  "position": "Horizonatal",
+                  "degree": null
+                },
+                "information": {
+                  "make": "Holmium Technologies",
+                  "modelNo": "",
+                  "serialNo": "",
+                  "location": ""
+                },
+                "parsing": {
+                  "isActive": true,
+                  "position": 0,
+                  "scaleFactor": 0.1,
+                  "offset": null,
+                  "dataType": "Unsigned Integer",
+                  "size": "16-Bit",
+                  "transpose": {
+                    "isActive": false,
+                    "plantId": null,
+                    "sensorId": null,
+                    "key": ""
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "isActive": true,
+            "deviceType": 132,
+            "sensors": [
+              {
+                "isActive": true,
+                "key": "GTI1",
+                "name": "GTI",
+                "type": {
+                  "position": "Tilted",
+                  "degree": null
+                },
+                "information": {
+                  "make": "Holmium Technologies",
+                  "modelNo": "",
+                  "serialNo": "",
+                  "location": ""
+                },
+                "parsing": {
+                  "isActive": true,
+                  "position": 0,
+                  "scaleFactor": 0.1,
+                  "offset": null,
+                  "dataType": "Unsigned Integer",
+                  "size": "16-Bit",
+                  "transpose": {
+                    "isActive": false,
+                    "plantId": null,
+                    "sensorId": null,
+                    "key": ""
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "isActive": false,
+        "isUpgrade": false,
+        "name": "Weather Station 2",
+        "default": true,
+        "building": "",
+        "configuration": [
+          {
+            "isActive": true,
+            "deviceType": 131,
+            "sensors": [
+              {
+                "isActive": true,
+                "key": "GHI",
+                "name": "GHI",
+                "type": {
+                  "position": "Horizonatal",
+                  "degree": null
+                },
+                "information": {
+                  "make": "Holmium Technologies",
+                  "modelNo": "",
+                  "serialNo": "",
+                  "location": ""
+                },
+                "parsing": {
+                  "isActive": true,
+                  "position": 0,
+                  "scaleFactor": 0.1,
+                  "offset": null,
+                  "dataType": "Unsigned Integer",
+                  "size": "16-Bit",
+                  "transpose": {
+                    "isActive": false,
+                    "plantId": null,
+                    "sensorId": null,
+                    "key": ""
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "isActive": true,
+            "deviceType": 132,
+            "sensors": [
+              {
+                "isActive": true,
+                "key": "GTI1",
+                "name": "GTI",
+                "type": {
+                  "position": "Tilted",
+                  "degree": null
+                },
+                "information": {
+                  "make": "Holmium Technologies",
+                  "modelNo": "",
+                  "serialNo": "",
+                  "location": ""
+                },
+                "parsing": {
+                  "isActive": true,
+                  "position": 0,
+                  "scaleFactor": 0.1,
+                  "offset": null,
+                  "dataType": "Unsigned Integer",
+                  "size": "16-Bit",
+                  "transpose": {
+                    "isActive": false,
+                    "plantId": null,
+                    "sensorId": null,
+                    "key": ""
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "isActive": true,
+        "isUpgrade": true,
+        "name": "Weather Station",
+        "default": true,
+        "building": "",
+        "configuration": [
+          {
+            "isActive": true,
+            "deviceType": 131,
+            "sensors": [
+              {
+                "isActive": true,
+                "key": "GTI1",
+                "name": "GTI1",
+                "type": {
+                  "position": "Tilted",
+                  "degree": null
+                },
+                "information": {
+                  "make": "Holmium Technologies",
+                  "modelNo": "",
+                  "serialNo": "",
+                  "location": ""
+                },
+                "parsing": {
+                  "isActive": true,
+                  "position": 0,
+                  "scaleFactor": 1,
+                  "offset": null,
+                  "dataType": "Signed Integer",
+                  "size": "16-Bit",
+                  "transpose": {
+                    "isActive": false,
+                    "plantId": null,
+                    "sensorId": null,
+                    "key": ""
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "isActive": true,
+            "deviceType": 132,
+            "sensors": [
+              {
+                "isActive": true,
+                "key": "GHI",
+                "name": "GHI",
+                "type": {
+                  "position": "Horizonatal",
+                  "degree": null
+                },
+                "information": {
+                  "make": "Holmium Technologies",
+                  "modelNo": "",
+                  "serialNo": "",
+                  "location": ""
+                },
+                "parsing": {
+                  "isActive": true,
+                  "position": 0,
+                  "scaleFactor": 1,
+                  "offset": null,
+                  "dataType": "Signed Integer",
+                  "size": "16-Bit",
+                  "transpose": {
+                    "isActive": false,
+                    "plantId": null,
+                    "sensorId": null,
+                    "key": ""
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 2,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1000",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": null,
+        "deviceConnected": 28
+      },
+      {
+        "id": 2,
+        "name": "D-LOG 1000",
+        "make": "Holmium Technologies",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "building": null,
+        "deviceConnected": 27
+      }
+    ]
+  },
+  "dataSharing": {
+    "isActive": true,
+    "protocol": "FTP",
+    "partnerType": 3,
+    "period": 15,
+    "url": "ftp.50hertz.in",
+    "user": "eastman",
+    "password": "P7e3Bm9ydTFPF657",
+    "localPath": "vivaanSolarTarana/",
+    "FTPPath": "/SOLAR/MP/TARANA/EAST_TARA/",
+    "fileName": "_Eastman_Tarana.csv",
+    "shared": {
+      "isActive": true,
+      "plantIds": [
+        207,
+        209
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5f6f3097b84a972068bc5a70"
+  },
+  "plantId": 108,
+  "plantName": "Wisdom Global School",
+  "location": {
+    "name": "Haridwar,U.P.",
+    "type": "point",
+    "coordinates": [
+      29.915969,
+      78.096665
+    ]
+  },
+  "owner": "Vivaan Solar Pvt Ltd",
+  "commissioningDate": {
+    "$date": "2019-12-05T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-09-20T18:29:59.000Z"
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "hrd@velveleen.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false,
+    "details": []
+  },
+  "unitPrice": 4,
+  "plantCapacity": 150,
+  "PVModules": {
+    "quantity": 455,
+    "make": "Adani",
+    "wattage": "330Wp"
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 2,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Sungrow",
+        "capacity": 100,
+        "modelNo": "110cx",
+        "serialNo": "",
+        "MPPT": 4,
+        "string": 24,
+        "building": "",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Sungrow",
+        "capacity": 50,
+        "modelNo": "50cx",
+        "serialNo": "",
+        "MPPT": 3,
+        "string": 12,
+        "building": "",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "weatherStation": {
+    "isActive": true,
+    "quantity": 1,
+    "default": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "WeatherStation 1",
+        "make": "Holmium Technologies",
+        "sensors": "GTI",
+        "GHI": false,
+        "GTI": true,
+        "ambientTemperature": false,
+        "moduleTemperature": false,
+        "windSpeed": false,
+        "windDirection": false,
+        "building": "",
+        "dataLoggerNo": 1,
+        "default": true
+      }
+    ]
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium",
+        "modelNo": "DLOG 101",
+        "serialNo": "HO-K101033",
+        "building": "",
+        "deviceConnected": 3
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f6f30aab84a972068bc5a71"
+  },
+  "plantId": 124,
+  "plantName": "Bhartam World School",
+  "location": {
+    "name": "Khanna, Punjab",
+    "type": "point",
+    "coordinates": [
+      30.6858885,
+      76.2556119
+    ]
+  },
+  "owner": "Vivaan Solar Pvt Ltd",
+  "commissioningDate": {
+    "$date": "2019-12-13T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-12-13T18:29:59.000Z"
+  },
+  "emailId": {
+    "isActive": false,
+    "details": []
+  },
+  "mobileNo": {
+    "isActive": false,
+    "details": []
+  },
+  "unitPrice": 4,
+  "plantCapacity": 60,
+  "PVModules": {
+    "quantity": 182,
+    "make": "Adani",
+    "wattage": "330Wp"
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Sungrow",
+        "capacity": 50,
+        "modelNo": "50cx",
+        "serialNo": "",
+        "MPPT": 3,
+        "string": 12,
+        "building": "",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium",
+        "modelNo": "DLOG 101",
+        "serialNo": "HO-K101061",
+        "building": "",
+        "deviceConnected": 1
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f6f30c0b84a972068bc5a72"
+  },
+  "plantId": 149,
+  "plantName": "Shree Ganga Mata Eye Hospital",
+  "location": {
+    "name": "Haridwar, Uttarakhand-249410",
+    "type": "point",
+    "coordinates": [
+      29.9892456,
+      78.1925784
+    ]
+  },
+  "owner": "Vivaan Solar Pvt Ltd",
+  "commissioningDate": {
+    "$date": "2020-03-05T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2021-03-05T18:29:59.000Z"
+  },
+  "emailId": {
+    "isActive": false,
+    "details": []
+  },
+  "mobileNo": {
+    "isActive": false,
+    "details": []
+  },
+  "unitPrice": 4,
+  "plantCapacity": 30,
+  "PVModules": {
+    "quantity": 84,
+    "make": "Adani",
+    "wattage": "325Wp"
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 2,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Delta",
+        "capacity": 10,
+        "modelNo": "",
+        "serialNo": "",
+        "building": "Dental Hospital",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Delta",
+        "capacity": 20,
+        "modelNo": "",
+        "serialNo": "",
+        "building": "Eye Hospital",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium",
+        "modelNo": "DLOG 101",
+        "serialNo": "HO-K101061",
+        "building": "",
+        "deviceConnected": 2
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f6f7969b84a972068bc5a75"
+  },
+  "plantId": 205,
+  "plantName": "10MW Solar Power Plant, Yelburga",
+  "location": {
+    "name": "Koppal, Karnataka-583284",
+    "type": "point",
+    "coordinates": [
+      15.6135452,
+      76.0099176
+    ]
+  },
+  "commissioningDate": {
+    "$date": "2020-03-10T18:30:00.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2024-03-10T18:30:00.000Z"
+  },
+  "owner": "Vivaan Solar Pvt Ltd",
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "info@holmiumtechnologies.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": false,
+    "details": []
+  },
+  "unitPrice": 4,
+  "plantCapacity": 11990.4,
+  "PVModules": {
+    "quantity": "",
+    "make": "",
+    "wattage": ""
+  },
+  "stringInverter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "centralizedInverter": {
+    "isActive": true,
+    "quantity": 6,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "ABB",
+        "capacity": 1999,
+        "modelNo": "PVS800 37B",
+        "serialNo": "",
+        "unit": "",
+        "building": "Room-1",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "ABB",
+        "capacity": 2002,
+        "modelNo": "PVS800 37B",
+        "serialNo": "",
+        "unit": "",
+        "building": "Room-1",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 3,
+        "name": "Inverter 3",
+        "make": "ABB",
+        "capacity": 2002,
+        "modelNo": "PVS800 37B",
+        "serialNo": "",
+        "unit": "",
+        "building": "Room-1",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 4,
+        "name": "Inverter 4",
+        "make": "ABB",
+        "capacity": 1975.4,
+        "modelNo": "PVS800 37B",
+        "serialNo": "",
+        "unit": "",
+        "building": "Room-2",
+        "buildingType": "",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 5,
+        "name": "Inverter 5",
+        "make": "ABB",
+        "capacity": 2041,
+        "modelNo": "PVS800 37B",
+        "serialNo": "",
+        "unit": "",
+        "building": "Room-2",
+        "buildingType": "",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 6,
+        "name": "Inverter 6",
+        "make": "ABB",
+        "capacity": 1971,
+        "modelNo": "PVS800 37B",
+        "serialNo": "",
+        "unit": "",
+        "building": "Room-2",
+        "buildingType": "",
+        "dataLoggerNo": 2
+      }
+    ]
+  },
+  "weatherStation": {
+    "isActive": true,
+    "quantity": 1,
+    "default": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "WeatherStation 1",
+        "make": "Holmium Technologies",
+        "sensors": "GTI, Ambient Temperature, Module Temperature",
+        "GHI": false,
+        "GTI": true,
+        "ambientTemperature": true,
+        "moduleTemperature": true,
+        "windSpeed": false,
+        "windDirection": false,
+        "building": "",
+        "dataLoggerNo": 2,
+        "default": true
+      }
+    ]
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 2,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium",
+        "modelNo": "DLOG 1000",
+        "serialNo": "",
+        "building": "",
+        "deviceConnected": 3
+      },
+      {
+        "id": 2,
+        "name": "D-LOG 2",
+        "make": "Holmium",
+        "modelNo": "DLOG 1000",
+        "serialNo": "",
+        "building": "",
+        "deviceConnected": 4
+      }
+    ]
+  },
+  "dataSharing": {
+    "isActive": true,
+    "protocol": "FTP",
+    "partnerType": 1,
+    "period": 15,
+    "url": "52.41.144.51",
+    "user": "sch_solar",
+    "password": "wefkffw21",
+    "localPath": "yelburga/",
+    "FTPPath": "/yelburga/",
+    "fileName": "_VivaanSolar.csv"
+  }
+},{
+  "_id": {
+    "$oid": "5f900079d4f54c1f8071f9ec"
+  },
+  "plantId": 133,
+  "plantName": "PGCIL Patiala",
+  "location": {
+    "name": "Patiala, Punjab-147103",
+    "type": "point",
+    "coordinates": [
+      30.2704951,
+      76.4558925
+    ]
+  },
+  "commissioningDate": {
+    "$date": "2020-02-26T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-10-09T18:29:59.000Z"
+  },
+  "owner": "REIL",
+  "emailId": {
+    "isActive": false,
+    "details": []
+  },
+  "mobileNo": {
+    "isActive": false,
+    "details": []
+  },
+  "unitPrice": 6.05,
+  "plantCapacity": 95,
+  "PVModules": {
+    "quantity": 293,
+    "make": "Waree",
+    "wattage": "325KWp"
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 3,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Power One",
+        "capacity": 15,
+        "modelNo": "",
+        "serialNo": "",
+        "MPPT": null,
+        "string": null,
+        "building": "Parking",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Power One",
+        "capacity": 30,
+        "modelNo": "",
+        "serialNo": "",
+        "MPPT": null,
+        "string": null,
+        "building": "DG Room",
+        "buildingType": "",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 3,
+        "name": "Inverter 3",
+        "make": "Power One",
+        "capacity": 50,
+        "modelNo": "",
+        "serialNo": "",
+        "MPPT": null,
+        "string": null,
+        "building": "Control Room",
+        "buildingType": "",
+        "dataLoggerNo": 3
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "weatherStation": {
+    "isActive": true,
+    "quantity": 1,
+    "default": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "WeatherStation 1",
+        "make": "Sivara",
+        "sensors": "GTI, Ambient Temp., Module Temp",
+        "GHI": false,
+        "GTI": true,
+        "ambientTemperature": true,
+        "moduleTemperature": true,
+        "windSpeed": false,
+        "windDirection": false,
+        "building": "Control Room",
+        "dataLoggerNo": 3,
+        "default": true
+      }
+    ]
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 3,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium",
+        "modelNo": "DLOG 301",
+        "serialNo": "HO-K301006",
+        "building": "Parking",
+        "deviceConnected": 1
+      },
+      {
+        "id": 2,
+        "name": "D-LOG 2",
+        "make": "Holmium",
+        "modelNo": "DLOG 301",
+        "serialNo": "HO-K301003",
+        "building": "DG Room",
+        "deviceConnected": 1
+      },
+      {
+        "id": 3,
+        "name": "D-LOG 3",
+        "make": "Holmium",
+        "modelNo": "DLOG 21x",
+        "serialNo": "HO-DL212-094",
+        "building": "Control Room",
+        "deviceConnected": 2
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f91212ed4f54c1f8071f9ee"
+  },
+  "plantId": 134,
+  "plantName": "PGCIL Malerkotla",
+  "location": {
+    "name": "Punjab 148001",
+    "type": "point",
+    "coordinates": [
+      30.5545516,
+      75.8027777
+    ]
+  },
+  "commissioningDate": {
+    "$date": "2020-02-18T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-10-09T18:29:59.000Z"
+  },
+  "owner": "REIL",
+  "emailId": {
+    "isActive": false,
+    "details": []
+  },
+  "mobileNo": {
+    "isActive": false,
+    "details": []
+  },
+  "unitPrice": 6.05,
+  "plantCapacity": 100,
+  "PVModules": {
+    "quantity": 308,
+    "make": "Waree",
+    "wattage": "325"
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 2,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Power One",
+        "capacity": 50,
+        "modelNo": "",
+        "serialNo": "",
+        "MPPT": null,
+        "string": null,
+        "building": "Control Room",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Power One",
+        "capacity": 50,
+        "modelNo": "",
+        "serialNo": "",
+        "MPPT": null,
+        "string": null,
+        "building": "Control Room",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "weatherStation": {
+    "isActive": true,
+    "quantity": 1,
+    "default": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "WeatherStation 1",
+        "make": "Sivara",
+        "sensors": "GTI, Ambient Temp., Module Temp",
+        "GHI": false,
+        "GTI": true,
+        "ambientTemperature": true,
+        "moduleTemperature": true,
+        "windSpeed": false,
+        "windDirection": false,
+        "building": "Control Room",
+        "dataLoggerNo": 1,
+        "default": true
+      }
+    ]
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium",
+        "modelNo": "DLOG 301",
+        "serialNo": "HO-K301002",
+        "building": "Control Room",
+        "deviceConnected": 3
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f9122fed4f54c1f8071f9f0"
+  },
+  "plantId": 135,
+  "plantName": "PGCIL Moga",
+  "location": {
+    "name": "Moga, Punjab 142001",
+    "type": "point",
+    "coordinates": [
+      30.8229926,
+      75.1034069
+    ]
+  },
+  "commissioningDate": {
+    "$date": "2020-03-03T18:30:01.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-10-09T18:29:59.000Z"
+  },
+  "owner": "REIL",
+  "emailId": {
+    "isActive": false,
+    "details": []
+  },
+  "mobileNo": {
+    "isActive": false,
+    "details": []
+  },
+  "unitPrice": 6.05,
+  "plantCapacity": 80,
+  "PVModules": {
+    "quantity": 247,
+    "make": "Waree",
+    "wattage": "325"
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 3,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Power One",
+        "capacity": 20,
+        "modelNo": "",
+        "serialNo": "",
+        "MPPT": null,
+        "string": null,
+        "building": "Admin Office",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Power One",
+        "capacity": 50,
+        "modelNo": "",
+        "serialNo": "",
+        "MPPT": null,
+        "string": null,
+        "building": "Control Room",
+        "buildingType": "",
+        "dataLoggerNo": 2
+      },
+      {
+        "id": 3,
+        "name": "Inverter 3",
+        "make": "Power One",
+        "capacity": 10,
+        "modelNo": "",
+        "serialNo": "",
+        "MPPT": null,
+        "string": null,
+        "building": "Control Room",
+        "buildingType": "",
+        "dataLoggerNo": 2
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "weatherStation": {
+    "isActive": true,
+    "quantity": 1,
+    "default": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "WeatherStation 1",
+        "make": "Sivara",
+        "sensors": "GTI, Ambient Temp., Module Temp",
+        "GHI": false,
+        "GTI": true,
+        "ambientTemperature": true,
+        "moduleTemperature": true,
+        "windSpeed": false,
+        "windDirection": false,
+        "building": "Control Room",
+        "dataLoggerNo": 2,
+        "default": true
+      }
+    ]
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 2,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium",
+        "modelNo": "DLOG 21x",
+        "serialNo": "HO-DL211-030",
+        "building": "Admin Office",
+        "deviceConnected": 1
+      },
+      {
+        "id": 2,
+        "name": "D-LOG 2",
+        "make": "Holmium",
+        "modelNo": "DLOG 21x",
+        "serialNo": "HO-DL212-091",
+        "building": "Control Room",
+        "deviceConnected": 2
+      }
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "5f912964d4f54c1f8071f9f2"
+  },
+  "plantId": 156,
+  "plantName": "Bansal Rice Mills",
+  "location": {
+    "name": "Kurukshetra,Haryana - 136156",
+    "type": "point",
+    "coordinates": [
+      30.0661064,
+      76.972708
+    ]
+  },
+  "owner": "Freyr Energy Services",
+  "commissioningDate": {
+    "$date": "2020-10-24T18:30:00.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2021-10-24T18:30:00.000Z"
+  },
+  "emailId": {
+    "isActive": false,
+    "details": []
+  },
+  "mobileNo": {
+    "isActive": false,
+    "details": []
+  },
+  "unitPrice": 4,
+  "plantCapacity": 171.75,
+  "PVModules": {
+    "quantity": 458,
+    "make": "Longi",
+    "wattage": "375Wp"
+  },
+  "stringInverter": {
+    "isActive": true,
+    "quantity": 4,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "make": "Solar Edge",
+        "capacity": 27.6,
+        "modelNo": "SE27.6K",
+        "serialNo": "",
+        "building": "Roof-1",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "make": "Solar Edge",
+        "capacity": 27.6,
+        "modelNo": "SE27.6K",
+        "serialNo": "",
+        "building": "Roof-5",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 3,
+        "name": "Inverter 3",
+        "make": "Solar Edge",
+        "capacity": 55,
+        "modelNo": "SE55K",
+        "serialNo": "",
+        "building": "Roof-2&4",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      },
+      {
+        "id": 4,
+        "name": "Inverter 4",
+        "make": "Solar Edge",
+        "capacity": 55,
+        "modelNo": "SE55K",
+        "serialNo": "",
+        "building": "Roof-3&6",
+        "buildingType": "",
+        "dataLoggerNo": 1
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "weatherStation": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "meter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "panelMeter": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "DG Set 1",
+        "solution": "DG"
+      }
+    ]
+  },
+  "dieselGenerator": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "DG Set 1",
+        "capacity": "125"
+      }
+    ]
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dataLogger": {
+    "isActive": true,
+    "quantity": 1,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "make": "Holmium",
+        "modelNo": "DLOG 101",
+        "serialNo": "HO-K101061",
+        "building": "",
+        "deviceConnected": 5
+      }
+    ]
+  }
+}]

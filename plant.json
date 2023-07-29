@@ -1,0 +1,1929 @@
+[
+{
+  "plantId": 101,
+  "plantName": "Sastry Park DMRC Depot",
+  "location": {
+    "address": "Shahdara, Delhi-110053",
+    "state": "Arunachal Pradesh",
+    "country": "India",
+    "pincode": "667676",
+    "timezone": "(UTC+05:30) Chennai, Mumbai, Kolkata, New Delhi",
+    "coordinates": {
+      "latitude": 28.674362,
+      "longitude": 77.243693
+    }
+  },
+  "owner": "Purshotam Rays Power P LTD",
+  "commissioningDate": {
+    "$date": "2023-12-31T18:29:59.000Z"
+  },
+  "licenseExpiryDate": {
+    "$date": "2023-12-31T18:29:59.000Z"
+  },
+  "unitPrice": 6.35,
+  "plantCapacity": 2528.21,
+  "PVModules": {
+    "make": "Waree",
+    "wattage": "efg",
+    "quantity": 24
+  },
+  "emailId": {
+    "isActive": true,
+    "details": [
+      {
+        "id": "sonu@purshotamgroup.com",
+        "role": "to"
+      }
+    ]
+  },
+  "mobileNo": {
+    "isActive": true,
+    "details": []
+  },
+  "stringInverter": {
+    "isActive": true,
+    "details": [
+      {
+        "id": 1,
+        "name": "Inverter 1",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 2,
+        "name": "Inverter 2",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 3,
+        "name": "Inverter 4",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 4,
+        "name": "Inverter 5",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 5,
+        "name": "Inverter 6",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 6,
+        "name": "Inverter 7",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 7,
+        "name": "Inverter 8",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 8,
+        "name": "Inverter 9",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 9,
+        "name": "Inverter 10",
+        "capacity": 71,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 10,
+        "name": "Inverter 11",
+        "capacity": 70.7,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 11,
+        "name": "Inverter 13",
+        "capacity": 70.7,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 12,
+        "name": "Inverter 14",
+        "capacity": 70.7,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 13,
+        "name": "Inverter 16",
+        "capacity": 71,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 14,
+        "name": "Inverter 17",
+        "capacity": 71,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 15,
+        "name": "Inverter 18",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 16,
+        "name": "Inverter 19",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "SBL-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 17,
+        "name": "Inverter 20",
+        "capacity": 53.3,
+        "modelNo": "SGKTL 60",
+        "serialNo": "",
+        "make": "Sungrow",
+        "building": "SBL-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 18,
+        "name": "Inverter 21",
+        "capacity": 60,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 19,
+        "name": "Inverter 22",
+        "capacity": 33,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 20,
+        "name": "Inverter 23",
+        "capacity": 64.79,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 21,
+        "name": "Inverter 24",
+        "capacity": 54,
+        "modelNo": "SGKTL 50",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 22,
+        "name": "Inverter 25",
+        "capacity": 65.21,
+        "modelNo": "SGKTL 50",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 23,
+        "name": "Inverter 26",
+        "capacity": 65.21,
+        "modelNo": "SGKTL 50",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 24,
+        "name": "Inverter 27",
+        "capacity": 57.96,
+        "modelNo": "SGKTL 50",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 25,
+        "name": "Inverter 28",
+        "capacity": 26.46,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 26,
+        "name": "Inverter 29",
+        "capacity": 29.45,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 27,
+        "name": "Inverter 30",
+        "capacity": 58.9,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 28,
+        "name": "Inverter 31",
+        "capacity": 64.79,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 29,
+        "name": "Inverter 32",
+        "capacity": 58.9,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "WS-3",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 30,
+        "name": "Inverter 33",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "ICSL",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 31,
+        "name": "Inverter 34",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "ICSL",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 32,
+        "name": "Inverter 35",
+        "capacity": 70.68,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "ICSL",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 33,
+        "name": "Inverter 37",
+        "capacity": 43.92,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "DCOS",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 34,
+        "name": "Inverter 38",
+        "capacity": 43.92,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "DCOS",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 35,
+        "name": "Inverter 39",
+        "capacity": 31.72,
+        "modelNo": "RPI-M 30",
+        "serialNo": null,
+        "make": "Delta",
+        "building": "ETU",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 36,
+        "name": "Inverter 40",
+        "capacity": 58.59,
+        "modelNo": "SGKTL 30",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "O&N",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 37,
+        "name": "Inverter 41",
+        "capacity": 14.64,
+        "modelNo": "SGKTL 20",
+        "serialNo": null,
+        "make": "Sungrow",
+        "building": "ASS-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 38,
+        "name": "Inverter 44",
+        "capacity": 61,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Delta",
+        "building": "IBL-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 39,
+        "name": "Inverter 45",
+        "capacity": 61,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Delta",
+        "building": "IBL-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 40,
+        "name": "Inverter 47",
+        "capacity": 73.2,
+        "modelNo": "SGKTL 70",
+        "serialNo": null,
+        "make": "Delta",
+        "building": "IBL-1",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 41,
+        "name": "Inverter 48",
+        "capacity": 61,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Delta",
+        "building": "IBL-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 42,
+        "name": "Inverter 49",
+        "capacity": 67.1,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Delta",
+        "building": "IBL-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 43,
+        "name": "Inverter 51",
+        "capacity": 67.1,
+        "modelNo": "SGKTL 60",
+        "serialNo": null,
+        "make": "Delta",
+        "building": "IBL-2",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      },
+      {
+        "id": 44,
+        "name": "trft",
+        "capacity": 342,
+        "modelNo": "gre",
+        "serialNo": "ger",
+        "make": "grg",
+        "building": "ge",
+        "buildingType": null,
+        "mppt": null,
+        "string": 44,
+        "isActive": true
+      }
+    ]
+  },
+  "centralizedInverter": {
+    "isActive": true,
+    "details": []
+  },
+  "weatherStation": {
+    "isActive": false,
+    "details": []
+  },
+  "meter": {
+    "isActive": true,
+    "details": []
+  },
+  "panelMeter": {
+    "isActive": false,
+    "quantity": 0,
+    "details": []
+  },
+  "dieselGenerator": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "zeroExport": {
+    "isActive": false,
+    "quantity": 0
+  },
+  "dataLogger": {
+    "isActive": true,
+    "details": [
+      {
+        "id": 1,
+        "name": "D-LOG 1",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "SBL-1"
+      },
+      {
+        "id": 2,
+        "name": "D-LOG 2",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "SBL 2"
+      },
+      {
+        "id": 3,
+        "name": "D-LOG 3",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "SBL-3"
+      },
+      {
+        "id": 4,
+        "name": "D-LOG 4",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "Workshop-1"
+      },
+      {
+        "id": 5,
+        "name": "D-LOG 5",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "Workshop-2"
+      },
+      {
+        "id": 6,
+        "name": "D-LOG 6",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "Workshop-3"
+      },
+      {
+        "id": 7,
+        "name": "D-LOG 7",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "ICSL"
+      },
+      {
+        "id": 8,
+        "name": "D-LOG 8",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "DCOS"
+      },
+      {
+        "id": 9,
+        "name": "D-LOG 9",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "ETU"
+      },
+      {
+        "id": 10,
+        "name": "D-LOG 10",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "O&N"
+      },
+      {
+        "id": 11,
+        "name": "D-LOG 11",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "ASS-1"
+      },
+      {
+        "id": 12,
+        "name": "D-LOG 14",
+        "modelNo": "D-LOG 10x",
+        "serialNo": null,
+        "deviceConnected": null,
+        "building": "IBL"
+      }
+    ]
+  },
+  "capacity": {
+    "AC": 2528.21,
+    "DC": 537
+  },
+  "contact": {
+    "isActive": true,
+    "details": [
+      {
+        "isActive": true,
+        "name": "athaetheth",
+        "role": "siteIncharge",
+        "emailId": "sonu@purshotamgroup.com",
+        "mobileNo": null
+      }
+    ]
+  },
+  "dataSharing": {
+    "isActive": false,
+    "protocol": "FTP",
+    "partnerType": 1,
+    "period": "10 Minute",
+    "url": "4646",
+    "user": "tjtrjt",
+    "password": "rtjrtjrtj",
+    "localPath": "Sastry Park DMRC Depot",
+    "FTPPath": "dzjdzjdg",
+    "fileName": "gfjndgj",
+    "port": "Auto",
+    "details": [
+      {
+        "isActive": true,
+        "protocol": "FTP",
+        "partnerType": 1,
+        "period": "10 Minute",
+        "url": "4646",
+        "user": "tjtrjt",
+        "password": "rtjrtjrtj",
+        "localPath": "/Sastry Park DMRC Depot/",
+        "path": "dzjdzjdg",
+        "fileName": "gfjndgj",
+        "port": "Auto"
+      }
+    ]
+  },
+  "deviceType": {
+    "inverter": {
+      "isActive": true,
+      "details": [
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "Inverter 1",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.68,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 2,
+          "name": "Inverter 2",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.68,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 3,
+          "name": "Inverter 4",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.68,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 4,
+          "name": "Inverter 5",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 53.3,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 5,
+          "name": "Inverter 6",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 53.3,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 6,
+          "name": "Inverter 7",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 53.3,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 7,
+          "name": "Inverter 8",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 53.3,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 8,
+          "name": "Inverter 9",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 53.3,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 9,
+          "name": "Inverter 10",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 71,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 10,
+          "name": "Inverter 11",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.7,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 11,
+          "name": "Inverter 13",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.7,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 12,
+          "name": "Inverter 14",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.7,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 13,
+          "name": "Inverter 16",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 71,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 14,
+          "name": "Inverter 17",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 71,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 15,
+          "name": "Inverter 18",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 53.3,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 16,
+          "name": "Inverter 19",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 53.3,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "SBL-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 17,
+          "name": "Inverter 20",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 53.3,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": "",
+            "location": "SBL-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 18,
+          "name": "Inverter 21",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 60,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 19,
+          "name": "Inverter 22",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 33,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 20,
+          "name": "Inverter 23",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 64.79,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 21,
+          "name": "Inverter 24",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 54,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 50",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 23,
+          "name": "Inverter 25",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 65.21,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 50",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 24,
+          "name": "Inverter 26",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 65.21,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 50",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 25,
+          "name": "Inverter 27",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 57.96,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 50",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 26,
+          "name": "Inverter 28",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 26.46,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 27,
+          "name": "Inverter 29",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 29.45,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 28,
+          "name": "Inverter 30",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 58.9,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 29,
+          "name": "Inverter 31",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 64.79,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 30,
+          "name": "Inverter 32",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 58.9,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "WS-3"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 31,
+          "name": "Inverter 33",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.68,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "ICSL"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 32,
+          "name": "Inverter 34",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.68,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "ICSL"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 33,
+          "name": "Inverter 35",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 70.68,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "ICSL"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 34,
+          "name": "Inverter 37",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 43.92,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "DCOS"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 35,
+          "name": "Inverter 38",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 43.92,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "DCOS"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 36,
+          "name": "Inverter 39",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 31.72,
+            "DC": null
+          },
+          "information": {
+            "make": "Delta",
+            "modelNo": "RPI-M 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "ETU"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 37,
+          "name": "Inverter 40",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 58.59,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 30",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "O&N"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 38,
+          "name": "Inverter 41",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 14.64,
+            "DC": null
+          },
+          "information": {
+            "make": "Sungrow",
+            "modelNo": "SGKTL 20",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "ASS-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 39,
+          "name": "Inverter 44",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 61,
+            "DC": null
+          },
+          "information": {
+            "make": "Delta",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "IBL-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 40,
+          "name": "Inverter 45",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 61,
+            "DC": null
+          },
+          "information": {
+            "make": "Delta",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "IBL-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 41,
+          "name": "Inverter 47",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 73.2,
+            "DC": null
+          },
+          "information": {
+            "make": "Delta",
+            "modelNo": "SGKTL 70",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "IBL-1"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 42,
+          "name": "Inverter 48",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 61,
+            "DC": null
+          },
+          "information": {
+            "make": "Delta",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "IBL-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 43,
+          "name": "Inverter 49",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 67.1,
+            "DC": null
+          },
+          "information": {
+            "make": "Delta",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "IBL-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 44,
+          "name": "Inverter 51",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 67.1,
+            "DC": null
+          },
+          "information": {
+            "make": "Delta",
+            "modelNo": "SGKTL 60",
+            "parsingVersion": null,
+            "serialNo": null,
+            "location": "IBL-2"
+          }
+        },
+        {
+          "isActive": true,
+          "id": 45,
+          "name": "trft",
+          "type": "stringInverter",
+          "capacity": {
+            "AC": 342,
+            "DC": 542
+          },
+          "information": {
+            "make": "grg",
+            "modelNo": "gre",
+            "parsingVersion": null,
+            "serialNo": "ger",
+            "location": "ge"
+          }
+        }
+      ]
+    },
+    "meter": {
+      "isActive": true,
+      "details": []
+    },
+    "weatherStation": {
+      "isActive": false,
+      "details": []
+    },
+    "scb": {
+      "isActive": true,
+      "details": [
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "scb 1 testing 2",
+          "strings": [
+            {
+              "isActive": true,
+              "name": "String 5"
+            },
+            {
+              "isActive": true,
+              "name": "String 6"
+            },
+            {
+              "isActive": false,
+              "name": "String 1"
+            },
+            {
+              "isActive": false,
+              "name": "String 2"
+            },
+            {
+              "isActive": false,
+              "name": "String 3"
+            },
+            {
+              "isActive": false,
+              "name": "String 4"
+            },
+            {
+              "isActive": false,
+              "name": "String 7"
+            },
+            {
+              "isActive": false,
+              "name": "String 8"
+            },
+            {
+              "isActive": false,
+              "name": "String 9"
+            },
+            {
+              "isActive": false,
+              "name": "String 10"
+            },
+            {
+              "isActive": false,
+              "name": "String 11"
+            },
+            {
+              "isActive": false,
+              "name": "String 12"
+            },
+            {
+              "isActive": false,
+              "name": "String 13"
+            },
+            {
+              "isActive": false,
+              "name": "String 14"
+            },
+            {
+              "isActive": false,
+              "name": "String 15"
+            },
+            {
+              "isActive": false,
+              "name": "String 16"
+            },
+            {
+              "isActive": false,
+              "name": "String 17"
+            },
+            {
+              "isActive": false,
+              "name": "String 18"
+            },
+            {
+              "isActive": false,
+              "name": "String 19"
+            },
+            {
+              "isActive": false,
+              "name": "String 20"
+            },
+            {
+              "isActive": false,
+              "name": "String 21"
+            },
+            {
+              "isActive": false,
+              "name": "String 22"
+            },
+            {
+              "isActive": false,
+              "name": "String 23"
+            },
+            {
+              "isActive": false,
+              "name": "String 24"
+            }
+          ],
+          "information": {
+            "modelNo": "gchc",
+            "serialNo": "jhfvjc",
+            "make": "jvgjc",
+            "location": "hjchgckh"
+          }
+        }
+      ]
+    },
+    "ups": {
+      "isActive": false,
+      "details": []
+    },
+    "circuitBreaker": {
+      "isActive": false,
+      "details": []
+    },
+    "annunciator": {
+      "isActive": false,
+      "details": []
+    },
+    "relay": {
+      "isActive": false,
+      "details": []
+    },
+    "fireAlarm": {
+      "isActive": false,
+      "details": []
+    },
+    "powerControl": {
+      "isActive": false,
+      "details": []
+    },
+    "dataLogger": {
+      "isActive": true,
+      "details": [
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 1",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "SBL-1"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 2",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "SBL 2"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 3",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "SBL-3"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 4",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "Workshop-1"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 5",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "Workshop-2"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 6",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "Workshop-3"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 7",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "ICSL"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 8",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "DCOS"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 9",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "ETU"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 10",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "O&N"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 11",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "ASS-1"
+        },
+        {
+          "isActive": true,
+          "id": 1,
+          "name": "D-LOG 14",
+          "modelNo": "D-LOG 10x",
+          "serialNo": null,
+          "location": "IBL"
+        }
+      ]
+    }
+  },
+  "information": {
+    "unitPrice": 6.35,
+    "owner": "Purshotam Rays Power P LTD",
+    "commissioningDate": {
+      "$date": "2023-12-31T18:29:59.000Z"
+    },
+    "PVModules": {
+      "make": "Waree",
+      "wattage": "efg",
+      "quantity": 24
+    }
+  },
+  "name": "Sastry Park DMRC Depot",
+  "subscription": {
+    "startDate": {
+      "$date": "2020-02-29T18:30:01.000Z"
+    },
+    "endDate": {
+      "$date": "2023-12-31T18:29:59.000Z"
+    }
+  },
+  "type": "groundmounted",
+  "scb": {
+    "isActive": true,
+    "details": [
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "scb 1 testing 2",
+        "strings": [
+          {
+            "isActive": true,
+            "name": "String 5"
+          },
+          {
+            "isActive": true,
+            "name": "String 6"
+          },
+          {
+            "isActive": false,
+            "name": "String 1"
+          },
+          {
+            "isActive": false,
+            "name": "String 2"
+          },
+          {
+            "isActive": false,
+            "name": "String 3"
+          },
+          {
+            "isActive": false,
+            "name": "String 4"
+          },
+          {
+            "isActive": false,
+            "name": "String 7"
+          },
+          {
+            "isActive": false,
+            "name": "String 8"
+          },
+          {
+            "isActive": false,
+            "name": "String 9"
+          },
+          {
+            "isActive": false,
+            "name": "String 10"
+          },
+          {
+            "isActive": false,
+            "name": "String 11"
+          },
+          {
+            "isActive": false,
+            "name": "String 12"
+          },
+          {
+            "isActive": false,
+            "name": "String 13"
+          },
+          {
+            "isActive": false,
+            "name": "String 14"
+          },
+          {
+            "isActive": false,
+            "name": "String 15"
+          },
+          {
+            "isActive": false,
+            "name": "String 16"
+          },
+          {
+            "isActive": false,
+            "name": "String 17"
+          },
+          {
+            "isActive": false,
+            "name": "String 18"
+          },
+          {
+            "isActive": false,
+            "name": "String 19"
+          },
+          {
+            "isActive": false,
+            "name": "String 20"
+          },
+          {
+            "isActive": false,
+            "name": "String 21"
+          },
+          {
+            "isActive": false,
+            "name": "String 22"
+          },
+          {
+            "isActive": false,
+            "name": "String 23"
+          },
+          {
+            "isActive": false,
+            "name": "String 24"
+          }
+        ],
+        "information": {
+          "modelNo": "gchc",
+          "serialNo": "jhfvjc",
+          "make": "jvgjc",
+          "location": "hjchgckh"
+        }
+      }
+    ]
+  }
+}
+]
