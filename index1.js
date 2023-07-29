@@ -115,6 +115,7 @@ function addContent() {
       .text("Owner:           ", { continued: true })
       .fontSize(8)
       .text(`${item.owner}`, {continued: false})
+      .text("Contact Details: ")
       .text(`Location: `, {continued: true})
       .font('Helvetica-Bold')
       .text(`${item.location.name}`)
