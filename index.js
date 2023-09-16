@@ -60,7 +60,12 @@ function firstPageData() {
   doc
   .fontSize(30)
   .font('Helvetica-Bold')
-  .text("Site Profile", 0, 480, { align: 'right' });
+  .text(`${data[0].plantName}`, 0, 470, { align: 'right' });
+
+  doc
+  .fontSize(17)
+  .font('Helvetica-Bold')
+  .text("Site Profile", 0, 505, { align: 'right' });
   
   doc
   .fontSize(13)
@@ -83,12 +88,13 @@ firstPageData();
 // To add a new page to the pdf
 doc.addPage();
 
-// Function to add a section header to the PDF
+// Function to add a section header for Devices (Inverter Meter Table) to the PDF
 function addSectionHeader(title) {
+  console.log("doc", title)
   doc
     .font('Helvetica-Bold')
     .fontSize(18)
-    .text(title, { underline: true, align: 'center' })
+    .text(title, { underline: false, align: 'left' })
     .moveDown(0.5);
 }
 
@@ -99,52 +105,65 @@ function addContent() {
     
       doc
         .font('Helvetica-Bold')
-        .fontSize(12) // Set a smaller font size, e.g., 12
-        .text(`${item.plantName} - Plant Information`, { underline: true, align: 'center' });
+        .fontSize(14) // Set a smaller font size, e.g., 12
+        .text(`${item.plantName} - Plant Information`, {align: 'left' });
         
-        doc.moveDown(0.3)
+        doc.moveDown(0.1)
+
         doc
         .fontSize(10)
-        .text(`${item.location.address}`, {align: 'center'})
+        .text(`${item.location.address}`, {align: 'left'})
         .moveDown(1)
         // .moveUp(5)
 
     doc 
     .font('Helvetica-Bold')
       .fontSize(9)
-      .text("Owner:     ", { continued: true })
-      .fontSize(8)
-      .text(`${item.owner}`, {continued: false})
+      .text("Capacity:     ", { continued: false })
+      // .moveDown(0.1)
+
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`AC:  ${item.capacity.AC}`, 95, 130, {continued: false})
       .moveDown(0.5)
 
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`DC:  ${item.capacity.DC}`, 95, 140, {continued: false})
+      .moveDown(0.5)
+
+    doc
+      .moveUp(0.5)
       .fontSize(9)
       .font('Helvetica-Bold')
-      .text("Contact Details: ")
-      .moveDown(0.5);
+      .text("Contact Details: ", 71, 155, {align: 'left', continued: false })
+      .moveDown(1)
+
+
       
     for(let contact of item.contact.details) {
       doc
       .fontSize(8)
       .font('Helvetica-Bold')
-      .text("Name:     ", 95, 142, {align: 'left', continued: true})
+      .text("Name:     ", 95, 165, {align: 'left', continued: true})
       .font('Helvetica')
       .text(`${contact.name}`, {continued: false})
 
       .font('Helvetica-Bold')
       .fontSize(8)
-      .text("Role:     ", 95, 152, {align: 'left', continued: true})
+      .text("Role:     ", 95, 175, {align: 'left', continued: true})
       .font('Helvetica')
       .text(`${contact.role}`, {continued: false})
 
       .font('Helvetica-Bold')
       .fontSize(8)
-      .text("Email-Id:     ", 95, 162, {align: 'left', continued: true})
+      .text("Email-Id:     ", 95, 185, {align: 'left', continued: true})
       .font('Helvetica')
       .text(`${contact.emailId}`, {continued: false})
 
       .font('Helvetica-Bold')
       .fontSize(8)
-      .text("Mobile-No:     ", 95, 172, {align: 'left', continued: true})
+      .text("Mobile-No:     ", 95, 195, {align: 'left', continued: true})
       .font('Helvetica')
       .text(`${contact.mobileNo}`, {continued: false})
     }
@@ -165,12 +184,12 @@ function addContent() {
     // Add the inverter details in a table
     addSectionHeader('Inverter Details')
 
-    const tableData = item.stringInverter.details.map((inverter) => [
+    const tableData = item.centralizedInverter.details.map((inverter) => [
       inverter.id,
       inverter.name,
-      inverter.make,
+      inverter.make.name,
       inverter.capacity.toString(),
-      inverter.modelNo,
+      inverter.modelNo.name,
       inverter.building,
     ]);
     const tableTop = doc.y;

@@ -3949,7 +3949,7 @@
         },
         "plantId": 301,
         "name": "testing sudhanshu",
-        "plantName": "testing sudhanshu",
+        "plantName": "SJ Pvt Ltd",
         "type": "rooftop",
         "capacity": {
           "AC": 456,
@@ -3957,7 +3957,7 @@
         },
         "plantCapacity": 456,
         "location": {
-          "address": "dhjjhteasj",
+          "address": "New Delhi",
           "state": "Andhra Pradesh",
           "country": "India",
           "pincode": "567765",
