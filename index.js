@@ -5,14 +5,18 @@ const fs = require('fs');
 
 let rawdata = fs.readFileSync('demoPlants.json');
 let data = JSON.parse(rawdata);
+let contactLength;
+let inverterLength;
+
 // console.log("data", data)
 
 // Create a new PDF document
 const doc = new PDFDocument({ margin: { top: 50, left: 50, right: 50, bottom: 0 } });;
 
 // Pipe the PDF document to a writable stream (e.g., a file)
-const stream = fs.createWriteStream('pdf/plantData7.pdf');
+const stream = fs.createWriteStream('pdf/Site Profile.pdf');
 doc.pipe(stream);
+
 
 // function to add the first page of the pdf
 function firstPageData() {
@@ -116,6 +120,7 @@ function addContent() {
         .moveDown(1)
         // .moveUp(5)
 
+    //Capacity
     doc 
     .font('Helvetica-Bold')
       .fontSize(9)
@@ -132,91 +137,363 @@ function addContent() {
       .text(`DC:  ${item.capacity.DC}`, 95, 140, {continued: false})
       .moveDown(0.5)
 
-    doc
-      .moveUp(0.5)
+    // Location
+    doc 
       .fontSize(9)
       .font('Helvetica-Bold')
-      .text("Contact Details: ", 71, 155, {align: 'left', continued: false })
+      .text("Location:      ", 71, 155, { continued: false })
+
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`Address:   ${item.location.address}`, 95, 170)
+      .moveDown(0.5)
+
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`State:   ${item.location.state}`, 95, 180)
+      .moveDown(0.5)
+
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`Country:   ${item.location.country}`, 95, 190)
+      .moveDown(0.5)
+
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`Pincode:   ${item.location.pincode}`, 95, 200)
+      .moveDown(0.5)
+
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`Timezone:   ${item.location.timezone}`, 95, 210)
+      .moveDown(0.5)
+
+    //PV Modules
+    doc
+      .fontSize(9)
+      .font('Helvetica-Bold')
+      .text('PV Modules: ', 71, 225)
+
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`Make:    ${item.PVModules.make}`, 95, 240)
+      
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`Wattage:    ${item.PVModules.wattage}`, 95, 250)
+
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`Quantity:    ${item.PVModules.quantity}`, 95, 260)
+
+
+    //Subscription
+    doc
+      .fontSize(9)
+      .font('Helvetica-Bold')
+      .text("Subscription: ", 71, 275, { align: 'left' })
       .moveDown(1)
 
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`Start Date:    ${item.subscription.startDate.$date}`, 95, 290)
 
-      
-    for(let contact of item.contact.details) {
+      .fontSize(7)
+      .font('Helvetica-Bold')
+      .text(`End Date:    ${item.subscription.endDate.$date}`, 95, 300)
+
+    //Contact  
+    doc
+      .fontSize(9)
+      .font('Helvetica-Bold')
+      .text("Contact Details: ", 71, 315)
+      .moveDown(1);
+
+      // addSectionHeader('Inverter Details')
+    let tableTop = doc.y;
+
+    console.log("fasfsdgdfhdh", tableTop)
+
+    const contactTableData = item.contact.details.map((contact) => [
+      contact.name,
+      contact.role,
+      contact.emailId,
+      contact.mobileNo
+    ]);
+
+    // Check if there's enough space for the contact table
+    // if (tableTop + contactTableData.length * 14 > doc.page.height - 50) {
+    //   // Not enough space, add a new page
+    //   doc.addPage();
+    //   tableTop = doc.y; // Reset the tableTop for the new page
+    // }
+    // console.log("contact", contactTableData)
+    doc.font('Helvetica-Bold');
+    drawTableHeader(tableTop, ['Name', 'Role', 'Email Id', 'Mobile No']);
+    doc.font('Helvetica');
+    drawTable(doc, tableTop + 10, contactTableData);
+
+
+    ////////////////////////////////////////////////////////////////////////////////
+
+    if(item.deviceType?.inverter?.details[0] != undefined) {
+      let inverterTableTop = contactLength + 80;
+
       doc
-      .fontSize(8)
+      .fontSize(9)
       .font('Helvetica-Bold')
-      .text("Name:     ", 95, 165, {align: 'left', continued: true})
-      .font('Helvetica')
-      .text(`${contact.name}`, {continued: false})
+      .text("Inverter Details: ", 71, inverterTableTop)
+      .moveDown(1);
 
-      .font('Helvetica-Bold')
-      .fontSize(8)
-      .text("Role:     ", 95, 175, {align: 'left', continued: true})
-      .font('Helvetica')
-      .text(`${contact.role}`, {continued: false})
+      console.log("inverterLength + doc.y", inverterTableTop)
 
-      .font('Helvetica-Bold')
-      .fontSize(8)
-      .text("Email-Id:     ", 95, 185, {align: 'left', continued: true})
-      .font('Helvetica')
-      .text(`${contact.emailId}`, {continued: false})
-
-      .font('Helvetica-Bold')
-      .fontSize(8)
-      .text("Mobile-No:     ", 95, 195, {align: 'left', continued: true})
-      .font('Helvetica')
-      .text(`${contact.mobileNo}`, {continued: false})
-    }
-
-    
-      // .text(`Location: `, {continued: true})
-      // .font('Helvetica-Bold')
-      // .text(`${item.location.name}`)
-      // .text(`${item.location.name}`)
-      // .fontSize(15)
-      // .text(`Owner: ${item.owner}`)
-      // .text(`Commissioning Date: ${item.commissioningDate.$date}`)
-      // .text(`License Expiry Date: ${item.licenseExpiryDate.$date}`)
-      // .text(`Unit Price: ${item.unitPrice}`)
-      // .text(`Plant Capacity: ${item.plantCapacity}`)
-      // .text(`PV Modules: Make: ${item.PVModules.make}`);
-
-    // Add the inverter details in a table
-    addSectionHeader('Inverter Details')
-
-    const tableData = item.centralizedInverter.details.map((inverter) => [
+      const inverterTableData = item.deviceType.inverter.details.map((inverter) => [
       inverter.id,
       inverter.name,
-      inverter.make.name,
-      inverter.capacity.toString(),
-      inverter.modelNo.name,
-      inverter.building,
+      inverter.information.make,
+      inverter.capacity.AC.toString(),
+      inverter.information.modelNo,
+      inverter.information.location
     ]);
-    const tableTop = doc.y;
+
+    // if (inverterTableTop + inverterTableData.length * 14 > doc.page.height - 50) {
+    //     // Not enough space, add a new page
+    //     doc.addPage();
+    //     inverterTableTop = doc.y; // Reset the inverterTableTop for the new page
+    //   }
+
+    console.log("inverterTableData", inverterTableData.length)
+    doc.font('Helvetica-Bold');
+    inverterTableHeader(inverterTableTop + 20, ['ID', 'Name', 'Make', 'Capacity', 'Model No', 'Building'], inverterTableData);
+    doc.font('Helvetica');
+    inverterTable(doc, inverterTableTop + 30, inverterTableData);
+
+  
+    }
+    if(item.deviceType?.meter?.details[0] != undefined) {
+      doc.addPage();
+
+          let meterTop = doc.y;
+
+      doc
+      .fontSize(9)
+      .font('Helvetica-Bold')
+      .text("Meter Details: ", 71, meterTop)
+      .moveDown(1);
+
+
+      const meterTableData = item.deviceType.meter.details.map((meter) => [
+      meter.id,
+      meter.name,
+      meter.type,
+      meter.information.make.name,
+      meter.information.modelNo.name
+    ]);
+
+    // if (inverterTableTop + inverterTableData.length * 14 > doc.page.height - 50) {
+    //     // Not enough space, add a new page
+    //     doc.addPage();
+    //     inverterTableTop = doc.y; // Reset the inverterTableTop for the new page
+    //   }
 
     doc.font('Helvetica-Bold');
-    drawTableHeader(tableTop, ['ID', 'Name', 'Make', 'Capacity', 'Model No', 'Building']);
+    meterTableHeader(meterTop + 20, ['ID', 'Name', 'Type', 'Make', 'Model No']);
     doc.font('Helvetica');
-    drawTable(doc, tableTop + 10, tableData);
+    meterTable(doc, meterTop + 30, meterTableData);
 
-    // Add a separator between plant information
+    }
+    // if(item.deviceType?.scb?.details[0] != undefined) {
+      
+    // }
+    // if(item.deviceType?.powerControl?.details[0] != undefined) {
+      
+    // }
+    // if(item.dataLogger?.details[0] != undefined) {
+      
+    // }
+
     doc.moveDown(1);
+
   }
 }
 
-function drawTableHeader(y, headers) {
-  // console.log("headers", headers)
+//Inverter
+function inverterTableHeader(y, headers, inverterTableData) {
+  console.log("yyyyyyyyyyy", y)
 
-  const initialX = 110;
+  const initialX = 100;
   let currentX = initialX;
-  const rowHeight = 10;
-  const cellWidth = 40;
+  const rowHeight = 14;
+  const cellWidth = 60;
 
     doc.rect(initialX, y, cellWidth * headers.length, rowHeight) // Draw background for the header row
        .fillColor('#DCDCDC') // Set the background color to grey
        .fill(); // Fill the background
   
     headers.forEach((header) => {
+      // if (y + inverterTableData.length * 14 > doc.page.height - 50) {
+      //   // Not enough space, add a new page
+      //   doc.addPage();
+      //   y = doc.y; // Reset the inverterTableTop for the new page
+      // }
+      doc
+        .fontSize(6)
+        .fillColor('#000000')
+        .text(header, currentX, y+2.3, { width: cellWidth, align: 'center' });
+      currentX += cellWidth;
+      
+    });
+    currentX = initialX;
+
+}
+
+
+function inverterTable(doc, y, tableData) {
+  // console.log("tableData", tableData)
+
+  const initialX = 100;
+  let currentX = initialX;
+  const rowHeight = 14;
+  const cellWidth = 60;
+  const headerBackgroundColor = '#FFFFFF'; // White background for the header row
+  const headerTextColor = '#000000'; // Black text color for the header row
+  const rowBackgroundColor = '#FFFFFF'; // White background for the data rows
+  const rowTextColor = '#000000'; // Black text color for the data rows
+
+  tableData.forEach((row, i) => {
+    
+    // Draw the row background with the specified color
+    doc.rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
+       .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
+       .fill(); // Fill the background
+
+    const centerY = y + rowHeight * i + rowHeight / 2;
+    
+    row.forEach((cell, j) => {
+      // if (y + tableData.length * 14 > doc.page.height - 50) {
+      //   // Not enough space, add a new page
+      //   doc.addPage();
+      //   y = doc.y; // Reset the inverterTableTop for the new page
+      // }
+      
+      const cellX = currentX + cellWidth * j;
+      const cellY = y + rowHeight * i;
+
+      // Draw the cell border with the specified width
+      doc.rect(cellX, cellY, cellWidth, rowHeight)
+         .lineWidth(0.5) // Set the border width
+         .strokeColor('#ebebeb')
+         .stroke();
+
+      // Set the text color based on the row type
+      doc
+        .fontSize(5)
+        .fillColor(i === 0 ? headerTextColor : rowTextColor) // Use different colors for header and data rows
+        .text(cell.toString(), cellX + 5, cellY + 5, { width: cellWidth - 10, align: 'center' });
+    
+    });
+
+    currentX = initialX;
+  });
+}
+
+//Meter
+function meterTableHeader(y, headers) {
+  console.log("yyyyyyyyyyy", y)
+
+  const initialX = 100;
+  let currentX = initialX;
+  const rowHeight = 14;
+  const cellWidth = 60;
+
+    doc.rect(initialX, y, cellWidth * headers.length, rowHeight) // Draw background for the header row
+       .fillColor('#DCDCDC') // Set the background color to grey
+       .fill(); // Fill the background
+  
+    headers.forEach((header) => {
+      // if (y + inverterTableData.length * 14 > doc.page.height - 50) {
+      //   // Not enough space, add a new page
+      //   doc.addPage();
+      //   y = doc.y; // Reset the inverterTableTop for the new page
+      // }
+      doc
+        .fontSize(6)
+        .fillColor('#000000')
+        .text(header, currentX, y+2.3, { width: cellWidth, align: 'center' });
+      currentX += cellWidth;
+      
+    });
+    currentX = initialX;
+
+}
+
+
+function meterTable(doc, y, tableData) {
+  // console.log("tableData", tableData)
+
+  const initialX = 100;
+  let currentX = initialX;
+  const rowHeight = 14;
+  const cellWidth = 60;
+  const headerBackgroundColor = '#FFFFFF'; // White background for the header row
+  const headerTextColor = '#000000'; // Black text color for the header row
+  const rowBackgroundColor = '#FFFFFF'; // White background for the data rows
+  const rowTextColor = '#000000'; // Black text color for the data rows
+
+  tableData.forEach((row, i) => {
+    
+    // Draw the row background with the specified color
+    doc.rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
+       .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
+       .fill(); // Fill the background
+
+    const centerY = y + rowHeight * i + rowHeight / 2;
+    
+    row.forEach((cell, j) => {
+      // if (y + tableData.length * 14 > doc.page.height - 50) {
+      //   // Not enough space, add a new page
+      //   doc.addPage();
+      //   y = doc.y; // Reset the inverterTableTop for the new page
+      // }
+      
+      const cellX = currentX + cellWidth * j;
+      const cellY = y + rowHeight * i;
+
+      // Draw the cell border with the specified width
+      doc.rect(cellX, cellY, cellWidth, rowHeight)
+         .lineWidth(0.5) // Set the border width
+         .strokeColor('#ebebeb')
+         .stroke();
+
+      // Set the text color based on the row type
+      doc
+        .fontSize(5)
+        .fillColor(i === 0 ? headerTextColor : rowTextColor) // Use different colors for header and data rows
+        .text(cell.toString(), cellX + 5, cellY + 5, { width: cellWidth - 10, align: 'center' });
+    
+    });
+
+    currentX = initialX;
+  });
+}
+
+
+//contact
+function drawTableHeader(y, headers) {
+  contactLength = y;
+  console.log("yyyyyyyyyy", y)
+
+  const initialX = 100;
+  let currentX = initialX;
+  const rowHeight = 14;
+  const cellWidth = 60;
+
+    doc.rect(initialX, y, cellWidth * headers.length, rowHeight) // Draw background for the header row
+       .fillColor('#DCDCDC') // Set the background color to grey
+       .fill(); // Fill the background
+  
+    headers.forEach((header) => {
+      
       doc
         .fontSize(6)
         .fillColor('#000000')
@@ -232,10 +509,10 @@ function drawTableHeader(y, headers) {
 function drawTable(doc, y, tableData) {
   // console.log("tableData", tableData)
 
-  const initialX = 110;
+  const initialX = 100;
   let currentX = initialX;
-  const rowHeight = 11;
-  const cellWidth = 40;
+  const rowHeight = 14;
+  const cellWidth = 60;
   const headerBackgroundColor = '#FFFFFF'; // White background for the header row
   const headerTextColor = '#000000'; // Black text color for the header row
   const rowBackgroundColor = '#FFFFFF'; // White background for the data rows
