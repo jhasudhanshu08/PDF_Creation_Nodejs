@@ -1,0 +1,879 @@
+[
+    {
+        "inverter": {
+    "isActive": true,
+    "details": [
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      },
+      {
+        "isActive": true,
+        "id": 1,
+        "name": "Inverter 1",
+        "type": "stringInverter",
+        "capacity": {
+          "AC": 70.68,
+          "DC": null
+      }
+      }
+    ]
+  }
+}
+]
