@@ -1,8 +1,10 @@
 const PDFDocument = require("pdfkit");
 const fs = require("fs");
+// const Calibri = require("./image/Calibri_Regular.ttf");
 
 let rawdata = fs.readFileSync("demoPlants.json");
 let data = JSON.parse(rawdata);
+console.log("data", data);
 let contactLength;
 let y_axis_length;
 
@@ -62,31 +64,32 @@ function firstPageData() {
 
   doc
     .fontSize(30)
-    .font("Helvetica-Bold")
-    .text(`${data[0].plantName}`, 0, 470, { align: "right" });
+    .font("Helvetica")
+    .text(`${data[0].plantName}`, 0, 490, { align: "right" });
 
   doc
     .fontSize(17)
-    .font("Helvetica-Bold")
-    .text("Site Profile", 0, 505, { align: "right" });
+    .font("Helvetica")
+    .text("Site Profile", 0, 525, { align: "right" });
 
   doc
     .fontSize(13)
-    .font("Helvetica-Bold")
-    .text("Holmium Technologies Private Limited", 0, 550, { align: "right" });
+    .font("Helvetica")
+    .text("Holmium Technologies Private Limited", 0, 570, { align: "right" });
 
   doc
     .fontSize(10)
     .font("Helvetica")
-    .text("info@holmiumtechnologies.com", 0, 570, { align: "right" });
+    .text("info@holmiumtechnologies.com", 0, 590, { align: "right" });
 
+    
   doc
     .fontSize(12)
-    .font("Helvetica-Bold")
+    .font("Helvetica")
     .text(
       "Copyright © 2023 Holmium Technologies. All Rights Reserved",
       70,
-      700,
+      706,
       { align: "center" }
     );
 }
@@ -100,14 +103,14 @@ doc.addPage();
 function addContent() {
   for (const item of data) {
     doc
-      .font("Helvetica-Bold")
-      .fontSize(14) // Set a smaller font size, e.g., 12
+      .font("Helvetica")
+      .fontSize(20) // Set a smaller font size, e.g., 12
       .text(`${item.plantName} - Plant Information`, { align: "left" });
 
     doc.moveDown(0.1);
 
     doc
-      .fontSize(10)
+      .fontSize(13)
       .text(`${item.location.address}`, { align: "left" })
       .moveDown(1);
     // .moveUp(5)
@@ -115,89 +118,90 @@ function addContent() {
     //Capacity
     doc
       .font("Helvetica-Bold")
-      .fontSize(9)
+      .fontSize(13)
       .text("Capacity:     ", { continued: false })
       // .moveDown(0.1)
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
-      .text(`AC:  ${item.capacity.AC}`, 95, 130, { continued: false })
+      .text(`AC:  ${item.capacity.AC}`, 95, 140, { continued: false })
       .moveDown(0.5)
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
-      .text(`DC:  ${item.capacity.DC}`, 95, 140, { continued: false })
+      .text(`DC:  ${item.capacity.DC}`, 95, 150, { continued: false })
       .moveDown(0.5);
 
     // Location
     doc
-      .fontSize(9)
+      .fontSize(13)
       .font("Helvetica-Bold")
       .text("Location:      ", 71, 155, { continued: false })
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`Address:   ${item.location.address}`, 95, 170)
       .moveDown(0.5)
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`State:   ${item.location.state}`, 95, 180)
       .moveDown(0.5)
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`Country:   ${item.location.country}`, 95, 190)
       .moveDown(0.5)
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`Pincode:   ${item.location.pincode}`, 95, 200)
       .moveDown(0.5)
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`Timezone:   ${item.location.timezone}`, 95, 210)
       .moveDown(0.5);
 
     //PV Modules
     doc
+      .fontSize(13)
+      .font("Helvetica-Bold")
+      .text("PV Modules: ", 71, 225);
+
+      doc
       .fontSize(9)
       .font("Helvetica-Bold")
-      .text("PV Modules: ", 71, 225)
-
-      .fontSize(7)
-      .font("Helvetica-Bold")
       .text(`Make:    ${item.PVModules.make}`, 95, 240)
-
-      .fontSize(7)
+    doc
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`Wattage:    ${item.PVModules.wattage}`, 95, 250)
-
-      .fontSize(7)
+    doc
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`Quantity:    ${item.PVModules.quantity}`, 95, 260);
 
     //Subscription
     doc
-      .fontSize(9)
+      .fontSize(13)
       .font("Helvetica-Bold")
       .text("Subscription: ", 71, 275, { align: "left" })
       .moveDown(1)
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`Start Date:    ${item.subscription.startDate.$date}`, 95, 290)
 
-      .fontSize(7)
+      .fontSize(9)
       .font("Helvetica-Bold")
       .text(`End Date:    ${item.subscription.endDate.$date}`, 95, 300);
 
     //Contact
     doc
-      .fontSize(9)
+      .fontSize(13)
       .font("Helvetica-Bold")
-      .text("Contact Details: ", 71, 315)
+      .text("Contact Details: ", 71, 360)
       .moveDown(1);
 
     // addSectionHeader('Inverter Details')
@@ -437,7 +441,7 @@ function inverterTable(doc, y, tableData) {
       if (elseCounter == 1) {
         doc.addPage();
         elseCounter++;
-        y = 0;
+        y = 50;
       }
 
       doc
@@ -544,7 +548,7 @@ function meterTable(doc, y, tableData) {
       if (elseCounter == 1) {
         doc.addPage();
         elseCounter++;
-        y = 0;
+        y = 50;
       }
 
       doc
