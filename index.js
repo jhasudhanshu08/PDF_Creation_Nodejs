@@ -112,100 +112,104 @@ function addContent() {
       .fillColor("#083f53")
       .text(`${item.plantName}`, 40, 50, { align: "left", continued: false })
 
-    // doc.moveDown(0.1);
+      //Owner
+      doc
+      .fontSize(12) // Set a smaller font size, e.g., 12
+      .font("Helvetica")
+      .fillColor("black")
+      .text(`Owner: `, 40, 70, { align: "left", continued: true })
 
-    // doc
-    //   .fontSize(13)
-    //   .font("Helvetica")
-    //   .text(`${item.location.address}`, { align: "left" })
-    //   .moveDown(1);
-    // .moveUp(5)
+      .fontSize(12) // Set a smaller font size, e.g., 12
+      .font("Helvetica")
+      .fillColor("#083f53")
+      .text(`${item.information.owner}`, 40, 70, { align: "left", continued: false })
+    
 
     // Location
     doc
       .fontSize(12)
       .font("Helvetica")
       .fillColor("black")
-      .text("Location:      ", 40, 70, { continued: false })
+      .text("Location:      ", 40, 90, { continued: false })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`Address:   `, 65, 90, { continued: true })
+      .text(`Address:   `, 65, 110, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.location.address}`, 65, 90, { continued: false })
+      .text(`${item.location.address}`, 65, 110, { continued: false })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`State:   `, 65, 100, { continued: true })
+      .text(`State:   `, 65, 120, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.location.state}`, 65, 100, { continued: false })
+      .text(`${item.location.state}`, 65, 120, { continued: false })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`Country:   `, 65, 110, { continued: true })
+      .text(`Country:   `, 65, 130, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.location.country}`, 65, 110, { continued: false })
+      .text(`${item.location.country}`, 65, 130, { continued: false })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`Pincode:   `, 65, 120, { continued: true })
+      .text(`Pincode:   `, 65, 140, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.location.pincode}`, 65, 120, { continued: false })
+      .text(`${item.location.pincode}`, 65, 140, { continued: false })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`Timezone:    `, 65, 130, { continued: true })
+      .text(`Timezone:    `, 65, 150, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.location.timezone}`, 65, 130, { continued: false })
+      .text(`${item.location.timezone}`, 65, 150, { continued: false })
 
     //Capacity
     doc
       .fontSize(12)
       .font("Helvetica")
       .fillColor("black")
-      .text("Capacity:     ", 40, 150, { continued: false })
+      .text("Capacity:     ", 40, 170, { continued: false })
       // .moveDown(0.1)
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`AC:  `, 65, 170, { continued: true })
+      .text(`AC:  `, 65, 190, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.capacity.AC}`, 65, 170, { continued: false })
+      .text(`${item.capacity.AC}`, 65, 190, { continued: false })
       .moveDown(0.5)
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`DC:  `, 65, 180, { continued: true })
+      .text(`DC:  `, 65, 200, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.capacity.DC}`, 65, 180, { continued: false })
+      .text(`${item.capacity.DC}`, 65, 200, { continued: false })
       .moveDown(0.5);
 
     
@@ -215,38 +219,38 @@ function addContent() {
       .fontSize(12)
       .font("Helvetica")
       .fillColor("black")
-      .text("PV Modules: ", 40, 200);
+      .text("PV Modules: ", 40, 220);
 
       doc
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`Make:    `, 65, 220, { continued: true })
+      .text(`Make:    `, 65, 240, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.PVModules.make}`, 65, 220, { continued: false })
+      .text(`${item.information.PVModules.make}`, 65, 240, { continued: false })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`Wattage:   `, 65, 230, { continued: true })
+      .text(`Wattage:   `, 65, 250, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.PVModules.wattage}`, 65, 230, { continued: false })
+      .text(`${item.information.PVModules.wattage}`, 65, 250, { continued: false })
   
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`Quantity:    `, 65, 240, { continued: true })
+      .text(`Quantity:    `, 65, 260, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${item.PVModules.quantity}`, 65, 240, { continued: false });
+      .text(`${item.information.PVModules.quantity}`, 65, 260, { continued: false });
 
     //Subscription
     // Input date string
@@ -268,35 +272,35 @@ function addContent() {
       .fontSize(12)
       .font("Helvetica")
       .fillColor("black")
-      .text("Subscription: ", 40, 260, { align: "left" })
+      .text("Subscription: ", 40, 280, { align: "left" })
       .moveDown(1)
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`Start Date:    `, 65, 280, { continued: true })
+      .text(`Start Date:    `, 65, 300, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${startDate}`, 65, 280, { continued: false })
+      .text(`${startDate}`, 65, 300, { continued: false })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#0f1e21")
-      .text(`End Date:    `, 65, 290, { continued: true })
+      .text(`End Date:    `, 65, 310, { continued: true })
 
       .fontSize(10)
       .font("Helvetica")
       .fillColor("#083f53")
-      .text(`${endDate}`, 65, 290, { continued: false })
+      .text(`${endDate}`, 65, 310, { continued: false })
 
     //Contact
     doc
       .fontSize(12)
       .font("Helvetica")
       .fillColor("black")
-      .text("Contact Details: ", 40, 310)
+      .text("Contact Details: ", 40, 330)
       .moveDown(1);
 
     // addSectionHeader('Inverter Details')
@@ -316,8 +320,8 @@ function addContent() {
     ////////////////////////////////////////////////////////////////////////////////
 
     if (item.deviceType?.inverter?.details[0] != undefined) {
-      let inverterHeadingText = contactLength + 110
-      let inverterTableTop = contactLength + 120;
+      let inverterHeadingText = contactLength + 40
+      let inverterTableTop = inverterHeadingText + 10;
 
       doc
         .fontSize(12)
@@ -341,8 +345,7 @@ function addContent() {
       doc.font("Helvetica");
       inverterTableHeader(
         inverterTableTop + 20,
-        ["S No.", "Name", "Location", "Capacity", "Protocol", "IP Address", "Port", "Slave Id"],
-        inverterTableData
+        ["S No", "Name", "Location", "Capacity", "Protocol", "IP Address", "Port", "Slave Id"]
       );
       doc.font("Helvetica");
       inverterTable(doc, inverterTableTop + 30, inverterTableData);
@@ -354,33 +357,25 @@ function addContent() {
       console.log("meterTop", meterTop);
 
       doc
-        .fontSize(10)
+        .fontSize(12)
         .font("Helvetica")
+        .fillColor("black")
         .text("Meter Details: ", 40, meterTop)
         .moveDown(1);
 
       const meterTableData = item.deviceType.meter.details.map((meter) => [
         meter.name,
+        meter.information.location,
         meter.type,
-        meter.information.make.name,
-        meter.information.modelNo.name,
+        meter.configuration.protocol,
+        meter.configuration.ipAddress,
+        meter.configuration.port,
+        meter.configuration.slaveId,
       ]);
-      console.log("meterTableData", item.deviceType.meter.details.length);
-
-      // if (inverterTableTop + inverterTableData.length * 14 > doc.page.height - 50) {
-      //     // Not enough space, add a new page
-      //     doc.addPage();
-      //     inverterTableTop = doc.y; // Reset the inverterTableTop for the new page
-      //   }
 
       doc.font("Helvetica");
-      meterTableHeader(meterTop + 20, [
-        "S No.",
-        "Name",
-        "Type",
-        "Make",
-        "Model No",
-      ]);
+      meterTableHeader(meterTop + 20, 
+        ["S No", "Name", "Location", "Type", "Protocol", "IP Address", "Port", "Slave Id"]);
       doc.font("Helvetica");
       meterTable(doc, meterTop + 30, meterTableData);
     }
@@ -474,6 +469,7 @@ function contactTable(doc, y_axis, tableData) {
             width: cellWidth - 10,
             align: "center",
           });
+          contactLength = cellY
       }
       else {
         const cellX = currentX + cellWidth * j;
@@ -494,6 +490,7 @@ function contactTable(doc, y_axis, tableData) {
             width: cellWidth - 10,
             align: "center",
           });
+          contactLength = cellY;
       }
 
     });
@@ -515,11 +512,11 @@ function inverterTableHeader(y, headers) {
     .fill(); // Fill the background
 
   headers.forEach((header) => {
-    if(header === "S No.") {
+    if(header === "S No") {
       doc
-        .fontSize(9)
+        .fontSize(7)
         .fillColor("#000000")
-        .text(header, currentX, y + 4, { width: cellWidth - 50, align: "center" });
+        .text(header, currentX - 1, y + 4, { width: cellWidth - 50, align: "center" });
       // currentX += cellWidth;
     }
     if(header === "Name") {
@@ -575,7 +572,7 @@ function inverterTableHeader(y, headers) {
   currentX = initialX;
 }
 function inverterTable(doc, y_axis, tableData) {
-  let y = y_axis + 5
+  let y = y_axis + 5;
   const initialX = 65;
   let currentX = initialX;
   const rowHeight = 15;
@@ -585,18 +582,21 @@ function inverterTable(doc, y_axis, tableData) {
   const rowBackgroundColor = "#FFFFFF"; // White background for the data rows
   const rowTextColor = "#083f53"; // Black text color for the data rows
   let newPageCounter = 1;
-  let elseCounter = 1;
-  let serialNoCounter = 1
+  let serialNoCounter = 1;
+  let i = 0
+  let rowSkipCounter = 1;
 
-
-  tableData.forEach((row, i) => {
+  tableData.forEach((row) => {
 
     row.splice(0, 0, serialNoCounter);
     serialNoCounter++;
 
+
     let noOfCellFit = (doc.page.height - y - 70) / rowHeight;
 
     if (newPageCounter > 0 && newPageCounter <= noOfCellFit) {
+      newPageCounter++;
+
       // Draw the row background with the specified color
       doc
         .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
@@ -606,6 +606,7 @@ function inverterTable(doc, y_axis, tableData) {
       row.forEach((cell, j) => {
         const cellX = currentX + cellWidth * j;
         const cellY = y + rowHeight * i;
+
         if(typeof(cell) == "number") {
           y_axis_length = cellY;
 
@@ -626,8 +627,6 @@ function inverterTable(doc, y_axis, tableData) {
             });
         }
         else {
-          // const cellX = currentX + cellWidth * j;
-          // const cellY = y + rowHeight * i;
           y_axis_length = cellY;
   
           // Draw the cell border with the specified width
@@ -647,14 +646,16 @@ function inverterTable(doc, y_axis, tableData) {
             });
         }
       });
-    } else {
-      newPageCounter = -1;
-      if (elseCounter == 1) {
-        doc.addPage();
-        elseCounter++;
-        y = 50;
-      }
-
+      i++;
+      rowSkipCounter++;
+    } 
+    else {
+      newPageCounter = 1;
+      doc.addPage();
+      y = 50;
+      i = 0;
+      rowSkipCounter = 0;
+      // Draw the row background with the specified color
       doc
         .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
         .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
@@ -662,7 +663,8 @@ function inverterTable(doc, y_axis, tableData) {
 
       row.forEach((cell, j) => {
         const cellX = currentX + cellWidth * j;
-        const cellY = y + rowHeight * i - 210;
+        const cellY = y + rowHeight * i;
+
         if(typeof(cell) == "number") {
           y_axis_length = cellY;
 
@@ -676,14 +678,13 @@ function inverterTable(doc, y_axis, tableData) {
           // Set the text color based on the row type
           doc
             .fontSize(9)
-            .fillColor(i === 0 ? headerTextColor : rowTextColor) // Use different colors for header and data rows
+            .fillColor(rowTextColor) // Use different colors for header and data rows
             .text(cell.toString(), cellX - 20, cellY + 5, {
               width: cellWidth - 10,
               align: "center",
             });
         }
         else {
-          // console.log("cellY", cellY)
           y_axis_length = cellY;
   
           // Draw the cell border with the specified width
@@ -696,58 +697,115 @@ function inverterTable(doc, y_axis, tableData) {
           // Set the text color based on the row type
           doc
             .fontSize(9)
-            .fillColor(i === 0 ? headerTextColor : rowTextColor) // Use different colors for header and data rows
-            .text(cell.toString(), cellX -45, cellY + 5, {
+            .fillColor(rowTextColor) // Use different colors for header and data rows
+            .text(cell.toString(), cellX - 45, cellY + 5, {
               width: cellWidth - 10,
               align: "center",
             });
         }
       });
+      i++;
     }
-
-    newPageCounter++;
-
-    // currentX = initialX;
   });
 }
 
 //Meter
 function meterTableHeader(y, headers) {
-  const initialX = 100;
+  const initialX = 65;
   let currentX = initialX;
-  const rowHeight = 14;
-  const cellWidth = 60;
+  const rowHeight = 15;
+  const cellWidth = 72;
 
   doc
-    .rect(initialX, y, cellWidth * headers.length, rowHeight) // Draw background for the header row
+    .rect(initialX, y, cellWidth * headers.length - 80, rowHeight) // Draw background for the header row
     .fillColor("#DCDCDC") // Set the background color to grey
     .fill(); // Fill the background
 
   headers.forEach((header) => {
-    doc
-      .fontSize(6)
-      .fillColor("#000000")
-      .text(header, currentX, y + 2.3, { width: cellWidth, align: "center" });
-    currentX += cellWidth;
+    if(header === "S No") {
+      doc
+        .fontSize(7)
+        .fillColor("#000000")
+        .text(header, currentX - 1, y + 4, { width: cellWidth - 50, align: "center" });
+      // currentX += cellWidth;
+    }
+    if(header === "Name") {
+      doc
+        .fontSize(9)
+        .fillColor("#000000")
+        .text(header, currentX + 15, y + 4, { width: cellWidth, align: "center" });
+      currentX += cellWidth;
+    }
+    if(header === "Location") {
+      doc
+        .fontSize(9)
+        .fillColor("#000000")
+        .text(header, currentX + 12, y + 4, { width: cellWidth, align: "center" });
+      currentX += cellWidth;
+    }
+    if(header === "Type") {
+      doc
+        .fontSize(9)
+        .fillColor("#000000")
+        .text(header, currentX + 8.5, y + 4, { width: cellWidth, align: "center" });
+      currentX += cellWidth;
+    }
+    if(header === "Protocol") {
+      doc
+        .fontSize(9)
+        .fillColor("#000000")
+        .text(header, currentX + 5, y + 4, { width: cellWidth, align: "center" });
+      currentX += cellWidth;
+    }
+    if(header === "IP Address") {
+      doc
+        .fontSize(9)
+        .fillColor("#000000")
+        .text(header, currentX, y + 4, { width: cellWidth, align: "center" });
+      currentX += cellWidth;
+    }
+    if(header === "Port") {
+      doc
+        .fontSize(9)
+        .fillColor("#000000")
+        .text(header, currentX - 3, y + 4, { width: cellWidth, align: "center" });
+      currentX += cellWidth;
+    }
+    if(header === "Slave Id") {
+      doc
+        .fontSize(9)
+        .fillColor("#000000")
+        .text(header, currentX - 7, y + 4, { width: cellWidth, align: "center" });
+      currentX += cellWidth;
+    }
   });
   currentX = initialX;
 }
-function meterTable(doc, y, tableData) {
-  const initialX = 100;
+function meterTable(doc, y_axis, tableData) {
+  let y = y_axis + 5;
+  const initialX = 65;
   let currentX = initialX;
-  const rowHeight = 14;
-  const cellWidth = 60;
+  const rowHeight = 15;
+  const cellWidth = 68.25;
   const headerBackgroundColor = "#FFFFFF"; // White background for the header row
   const headerTextColor = "#000000"; // Black text color for the header row
   const rowBackgroundColor = "#FFFFFF"; // White background for the data rows
-  const rowTextColor = "#000000"; // Black text color for the data rows
+  const rowTextColor = "#083f53"; // Black text color for the data rows
   let newPageCounter = 1;
-  let elseCounter = 1;
+  let serialNoCounter = 1;
+  let i = 0
+  let rowSkipCounter = 1;
 
-  tableData.forEach((row, i) => {
-    let noOfCellFit = (doc.page.height - y - 70) / rowHeight;
+  tableData.forEach((row) => {
+
+    row.splice(0, 0, serialNoCounter);
+    serialNoCounter++;
+
+    let noOfCellFit = (doc.page.height - y - 75) / rowHeight;
 
     if (newPageCounter > 0 && newPageCounter <= noOfCellFit) {
+      newPageCounter++;
+
       // Draw the row background with the specified color
       doc
         .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
@@ -757,32 +815,57 @@ function meterTable(doc, y, tableData) {
       row.forEach((cell, j) => {
         const cellX = currentX + cellWidth * j;
         const cellY = y + rowHeight * i;
-        y_axis_length = cellY;
 
-        // Draw the cell border with the specified width
-        doc
-          .rect(cellX, cellY, cellWidth, rowHeight)
-          .lineWidth(0.5) // Set the border width
-          .strokeColor("#ebebeb")
-          .stroke();
+        if(typeof(cell) == "number") {
+          y_axis_length = cellY;
 
-        // Set the text color based on the row type
-        doc
-          .fontSize(5)
-          .fillColor(i === 0 ? headerTextColor : rowTextColor) // Use different colors for header and data rows
-          .text(cell.toString(), cellX + 5, cellY + 5, {
-            width: cellWidth - 10,
-            align: "center",
-          });
+          // Draw the cell border with the specified width
+          doc
+            .rect(cellX, cellY, cellWidth - 50, rowHeight)
+            .lineWidth(0.5) // Set the border width
+            .strokeColor("#ebebeb")
+            .stroke();
+
+          // Set the text color based on the row type
+          doc
+            .fontSize(9)
+            .fillColor(rowTextColor) // Use different colors for header and data rows
+            .text(cell.toString(), cellX - 20, cellY + 5, {
+              width: cellWidth - 10,
+              align: "center",
+            });
+        }
+        else {
+          y_axis_length = cellY;
+  
+          // Draw the cell border with the specified width
+          doc
+            .rect(cellX - 50, cellY, cellWidth, rowHeight)
+            .lineWidth(0.5) // Set the border width
+            .strokeColor("#ebebeb")
+            .stroke();
+  
+          // Set the text color based on the row type
+          doc
+            .fontSize(9)
+            .fillColor(rowTextColor) // Use different colors for header and data rows
+            .text(cell.toString(), cellX - 45, cellY + 5, {
+              width: cellWidth - 10,
+              align: "center",
+            });
+        }
       });
-    } else {
-      newPageCounter = -1;
-      if (elseCounter == 1) {
-        doc.addPage();
-        elseCounter++;
-        y = 50;
-      }
+      i++;
+      rowSkipCounter++;
+    } 
+    else {
+      newPageCounter = 1;
+      doc.addPage();
+      y = 50;
+      i = 0;
+      rowSkipCounter = 0;
 
+      // Draw the row background with the specified color
       doc
         .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
         .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
@@ -790,31 +873,49 @@ function meterTable(doc, y, tableData) {
 
       row.forEach((cell, j) => {
         const cellX = currentX + cellWidth * j;
-        const cellY = y + rowHeight * i - 210;
-        // console.log("cellY", cellY)
-        y_axis_length = cellY;
+        const cellY = y + rowHeight * i;
 
-        // Draw the cell border with the specified width
-        doc
-          .rect(cellX, cellY, cellWidth, rowHeight)
-          .lineWidth(0.5) // Set the border width
-          .strokeColor("#ebebeb")
-          .stroke();
+        if(typeof(cell) == "number") {
+          y_axis_length = cellY;
 
-        // Set the text color based on the row type
-        doc
-          .fontSize(5)
-          .fillColor(i === 0 ? headerTextColor : rowTextColor) // Use different colors for header and data rows
-          .text(cell.toString(), cellX + 5, cellY + 5, {
-            width: cellWidth - 10,
-            align: "center",
-          });
+          // Draw the cell border with the specified width
+          doc
+            .rect(cellX, cellY, cellWidth - 50, rowHeight)
+            .lineWidth(0.5) // Set the border width
+            .strokeColor("#ebebeb")
+            .stroke();
+
+          // Set the text color based on the row type
+          doc
+            .fontSize(9)
+            .fillColor(rowTextColor) // Use different colors for header and data rows
+            .text(cell.toString(), cellX - 20, cellY + 5, {
+              width: cellWidth - 10,
+              align: "center",
+            });
+        }
+        else {
+          y_axis_length = cellY;
+  
+          // Draw the cell border with the specified width
+          doc
+            .rect(cellX - 50, cellY, cellWidth, rowHeight)
+            .lineWidth(0.5) // Set the border width
+            .strokeColor("#ebebeb")
+            .stroke();
+  
+          // Set the text color based on the row type
+          doc
+            .fontSize(9)
+            .fillColor(rowTextColor) // Use different colors for header and data rows
+            .text(cell.toString(), cellX -45, cellY + 5, {
+              width: cellWidth - 10,
+              align: "center",
+            });
+        }
       });
+      i++;
     }
-
-    newPageCounter++;
-
-    // currentX = initialX;
   });
 }
 // Call the function to add content to the PDF
