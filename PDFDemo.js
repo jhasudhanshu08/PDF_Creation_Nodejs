@@ -1,12 +1,10 @@
 exports.getPlantProfilePDFService = async (plantId) => {
   try {
-    console.log("hello", plantId);
-    let plantData = await this.getPlantProfileService(null, plantId);
-    console.log("plantData", plantData.response[0].contact);
+    let plantData = await this.getPlantProfileService(plantId);
 
     function pdfGenerator(plantData) {
       let data = plantData;
-      // console.log("data...", data[0]);
+      console.log("data", data[0].dataLogger)
       let contactLength;
       let y_axis_length;
       // Create a new PDF document
@@ -62,7 +60,7 @@ exports.getPlantProfilePDFService = async (plantId) => {
           doc
           .fontSize(30)
           .font("Helvetica")
-          .text(`${data[0].name}`, 0, 450, { align: "right" });
+          .text(`${data[0].name}`, 10, 450, { align: "right" });
         }
         else {
           doc
@@ -92,7 +90,7 @@ exports.getPlantProfilePDFService = async (plantId) => {
           .fontSize(12)
           .font("Helvetica")
           .text(
-            "Copyright © 2023 Holmium Technologies. All Rights Reserved",
+            `Copyright © ${new Date().getFullYear()} Holmium Technologies. All Rights Reserved`,
             70,
             700,
             { align: "center" }
@@ -304,7 +302,7 @@ exports.getPlantProfilePDFService = async (plantId) => {
 
       
           //Contact
-          if(item.contact.details[0] != undefined) {
+          if(item.contact?.details[0] != undefined) {
             doc
               .fontSize(12)
               .font("Helvetica")
@@ -365,7 +363,7 @@ exports.getPlantProfilePDFService = async (plantId) => {
             doc.font("Helvetica");
             inverterTableHeader(
               inverterTableTop + 20,
-              ["S No", "Name", "Location", "Capacity", "Protocol", "IP Address", "Port", "Slave Id"]
+              ["S No", "Name", "Location", "Capacity (kW)", "Protocol", "IP Address", "Port", "Slave Id"]
             );
             doc.font("Helvetica");
             table(doc, inverterTableTop + 30, inverterTableData);
@@ -467,251 +465,44 @@ exports.getPlantProfilePDFService = async (plantId) => {
           // if(item.deviceType?.powerControl?.details[0] != undefined) {
       
           // }
-          // if(item.dataLogger?.details[0] != undefined) {
+          if(item.dataLogger?.details[0] != undefined) {
+            
+            // doc.addPage();
+            let dataLoggerTop = doc.y + 20;
+
+            if(doc.y >= 665) {
+              doc.addPage()
+              dataLoggerTop = doc.y - 30
+            }
       
-          // }
+            doc
+              .fontSize(12)
+              .font("Helvetica")
+              .fillColor("black")
+              .text("Data Logger Details: ", 40, dataLoggerTop)
+              .moveDown(1);
+      
+            const dataLoggerTableData = item.dataLogger.details.map((dataLogger) => [
+              dataLogger.name,
+              dataLogger.location,
+              dataLogger.serialNo,
+              dataLogger.modelNo,
+            ]);
+      
+            doc.font("Helvetica");
+            dataLoggerTableHeader(dataLoggerTop + 20, 
+              ["S No", "Name", "Location", "Serial No", "Model No"]);
+            doc.font("Helvetica");
+            table(doc, dataLoggerTop + 30, dataLoggerTableData);
+          
+          }
       
           doc.moveDown(1);
         }
       }
 
 
-      //Table
-      function table(doc, y_axis, tableData) {
-        let y = doc.y;
-        const initialX = 65;
-        let currentX = initialX;
-        let rowHeight = 15;
-        const cellWidth = 68.25;
-        const headerBackgroundColor = "#FFFFFF"; // White background for the header row
-        const headerTextColor = "#000000"; // Black text color for the header row
-        const rowBackgroundColor = "#FFFFFF"; // White background for the data rows
-        const rowTextColor = "#083f53"; // Black text color for the data rows
-        let newPageCounter = 1;
-        let serialNoCounter = 1;
-        let i = 0
-        let rowSkipCounter = 1;
-
-        for(let row of tableData) {
-          if(row[0]?.toString().length > 12 || row[1]?.toString().length > 12) {
-            rowHeight = 25;
-            break;
-          }
-        }
-
-        tableData.forEach((row) => {
-
-          row.splice(0, 0, serialNoCounter);
-          serialNoCounter++;
-
-
-          let noOfCellFit = (doc.page.height - y - 70) / rowHeight;
-
-          // if (newPageCounter > 0 && newPageCounter <= noOfCellFit) {
-            newPageCounter++;
-
-            // Draw the row background with the specified color
-            doc
-              .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-              .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-              .fill(); // Fill the background
-
-            row.forEach((cell, j) => {
-
-              
-              const cellX = currentX + cellWidth * j;
-              let cellY =  y + rowHeight * i;
-
-              if(cellY >= 705) {
-                doc.addPage();
-                // cellY = 50;
-                y = 50;
-                i = 0;
-                cellY =  y + rowHeight * i;
-              }
-
-              // if(row[1] == "LBS-A-INV1") {
-              //   console.log("cellY : ", cellY, " i : ", )
-              // }
-
-              if(typeof(cell) == "number") {
-                if(j !== row.length-1) {
-                  y_axis_length = cellY;
-  
-                  // Draw the cell border with the specified width
-                  doc
-                    .rect(cellX, cellY, cellWidth - 50, rowHeight)
-                    .lineWidth(0.5) // Set the border width
-                    .strokeColor("#ebebeb")
-                    .stroke();
-  
-                  // Set the text color based on the row type
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 20, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-
-                }
-                else {
-                  y_axis_length = cellY;
-        
-                  // Draw the cell border with the specified width
-                  doc
-                    .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                    .lineWidth(0.5) // Set the border width
-                    .strokeColor("#ebebeb")
-                    .stroke();
-          
-                  // Set the text color based on the row type
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-              }
-              else if(cell == null) {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text("-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                if(cell.toString().length > 12) {
-                  // rowHeight = 25;
-                  // rowHeigthCounter = 1;
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2 - 5, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-                else {
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-              }
-            });
-            i++;
-            rowSkipCounter++;
-          // } 
-          // else {
-
-          //   newPageCounter = 1;
-          //   if(newPageCounter == 1) {
-          //     doc.addPage();
-          //   }
-          //   y = 50;
-          //   i = 0;
-          //   rowSkipCounter = 0;
-          //   // Draw the row background with the specified color
-          //   doc
-          //     .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-          //     .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-          //     .fill(); // Fill the background
-
-          //   row.forEach((cell, j) => {
-
-          //     const cellX = currentX + cellWidth * j;
-          //     const cellY = y + rowHeight * i;
-
-          //     if(typeof(cell) == "number") {
-          //       y_axis_length = cellY;
-
-          //       // Draw the cell border with the specified width
-          //       doc
-          //         .rect(cellX, cellY, cellWidth - 50, rowHeight)
-          //         .lineWidth(0.5) // Set the border width
-          //         .strokeColor("#ebebeb")
-          //         .stroke();
-
-          //       // Set the text color based on the row type
-          //       doc
-          //         .fontSize(9)
-          //         .fillColor(rowTextColor) // Use different colors for header and data rows
-          //         .text(cell ? cell.toString() : "-", cellX - 20, cellY + 5, {
-          //           width: cellWidth - 10,
-          //           align: "center",
-          //         });
-          //     }
-          //     else if(cell == null) {
-          //       y_axis_length = cellY;
-        
-          //       // Draw the cell border with the specified width
-          //       doc
-          //         .rect(cellX - 50, cellY, cellWidth, rowHeight)
-          //         .lineWidth(0.5) // Set the border width
-          //         .strokeColor("#ebebeb")
-          //         .stroke();
-        
-          //       // Set the text color based on the row type
-          //       doc
-          //         .fontSize(9)
-          //         .fillColor(rowTextColor) // Use different colors for header and data rows
-          //         .text("-", cellX - 45, cellY + 5, {
-          //           width: cellWidth - 10,
-          //           align: "center",
-          //         });
-          //     }
-          //     else {
-          //       y_axis_length = cellY;
-        
-          //       // Draw the cell border with the specified width
-          //       doc
-          //         .rect(cellX - 50, cellY, cellWidth, rowHeight)
-          //         .lineWidth(0.5) // Set the border width
-          //         .strokeColor("#ebebeb")
-          //         .stroke();
-        
-          //       // Set the text color based on the row type
-          //       doc
-          //         .fontSize(9)
-          //         .fillColor(rowTextColor) // Use different colors for header and data rows
-          //         .text(cell ? cell.toString() : "-", cellX - 45, cellY + 5, {
-          //           width: cellWidth - 10,
-          //           align: "center",
-          //         });
-          //     }
-          //   });
-          //   i++; 
-          // }
-        });
-      }
+      
       //Contact
       function contactTableHeader(y, headers) {
         contactLength = y;
@@ -848,7 +639,7 @@ exports.getPlantProfilePDFService = async (plantId) => {
         });
       }
 
-      //Inverter
+      //Headers
       function inverterTableHeader(y, headers) {
 
         const initialX = 65;
@@ -888,7 +679,7 @@ exports.getPlantProfilePDFService = async (plantId) => {
               .text(header, currentX + 12, y + 4, { width: cellWidth, align: "center" });
             currentX += cellWidth;
           }
-          if(header === "Capacity") {
+          if(header === "Capacity (kW)") {
             doc
               .fontSize(9)
               .fillColor("#000000")
@@ -926,243 +717,6 @@ exports.getPlantProfilePDFService = async (plantId) => {
         });
         currentX = initialX;
       }
-      function inverterTable(doc, y_axis, tableData) {
-        let y = doc.y;
-        const initialX = 65;
-        let currentX = initialX;
-        let rowHeight = 15;
-        const cellWidth = 68.25;
-        const headerBackgroundColor = "#FFFFFF"; // White background for the header row
-        const headerTextColor = "#000000"; // Black text color for the header row
-        const rowBackgroundColor = "#FFFFFF"; // White background for the data rows
-        const rowTextColor = "#083f53"; // Black text color for the data rows
-        let newPageCounter = 1;
-        let serialNoCounter = 1;
-        let i = 0
-        let rowSkipCounter = 1;
-
-        for(let row of tableData) {
-          if(row[0]?.toString().length > 12 || row[1]?.toString().length > 12) {
-            rowHeight = 25;
-            break;
-          }
-        }
-
-        tableData.forEach((row) => {
-
-          row.splice(0, 0, serialNoCounter);
-          serialNoCounter++;
-
-
-          let noOfCellFit = (doc.page.height - y - 70) / rowHeight;
-
-          // if (newPageCounter > 0 && newPageCounter <= noOfCellFit) {
-            newPageCounter++;
-
-            // Draw the row background with the specified color
-            doc
-              .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-              .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-              .fill(); // Fill the background
-
-            row.forEach((cell, j) => {
-
-              
-              const cellX = currentX + cellWidth * j;
-              let cellY =  y + rowHeight * i;
-
-              if(cellY >= 705) {
-                doc.addPage();
-                // cellY = 50;
-                y = 50;
-                i = 0;
-                cellY =  y + rowHeight * i;
-              }
-
-              // if(row[1] == "LBS-A-INV1") {
-              //   console.log("cellY : ", cellY, " i : ", )
-              // }
-
-              if(typeof(cell) == "number") {
-                if(j !== row.length-1) {
-                  y_axis_length = cellY;
-  
-                  // Draw the cell border with the specified width
-                  doc
-                    .rect(cellX, cellY, cellWidth - 50, rowHeight)
-                    .lineWidth(0.5) // Set the border width
-                    .strokeColor("#ebebeb")
-                    .stroke();
-  
-                  // Set the text color based on the row type
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 20, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-
-                }
-                else {
-                  y_axis_length = cellY;
-        
-                  // Draw the cell border with the specified width
-                  doc
-                    .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                    .lineWidth(0.5) // Set the border width
-                    .strokeColor("#ebebeb")
-                    .stroke();
-          
-                  // Set the text color based on the row type
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-              }
-              else if(cell == null) {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text("-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                if(cell.toString().length > 12) {
-                  // rowHeight = 25;
-                  // rowHeigthCounter = 1;
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2 - 5, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-                else {
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-              }
-            });
-            i++;
-            rowSkipCounter++;
-          // } 
-          // else {
-
-          //   newPageCounter = 1;
-          //   if(newPageCounter == 1) {
-          //     doc.addPage();
-          //   }
-          //   y = 50;
-          //   i = 0;
-          //   rowSkipCounter = 0;
-          //   // Draw the row background with the specified color
-          //   doc
-          //     .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-          //     .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-          //     .fill(); // Fill the background
-
-          //   row.forEach((cell, j) => {
-
-          //     const cellX = currentX + cellWidth * j;
-          //     const cellY = y + rowHeight * i;
-
-          //     if(typeof(cell) == "number") {
-          //       y_axis_length = cellY;
-
-          //       // Draw the cell border with the specified width
-          //       doc
-          //         .rect(cellX, cellY, cellWidth - 50, rowHeight)
-          //         .lineWidth(0.5) // Set the border width
-          //         .strokeColor("#ebebeb")
-          //         .stroke();
-
-          //       // Set the text color based on the row type
-          //       doc
-          //         .fontSize(9)
-          //         .fillColor(rowTextColor) // Use different colors for header and data rows
-          //         .text(cell ? cell.toString() : "-", cellX - 20, cellY + 5, {
-          //           width: cellWidth - 10,
-          //           align: "center",
-          //         });
-          //     }
-          //     else if(cell == null) {
-          //       y_axis_length = cellY;
-        
-          //       // Draw the cell border with the specified width
-          //       doc
-          //         .rect(cellX - 50, cellY, cellWidth, rowHeight)
-          //         .lineWidth(0.5) // Set the border width
-          //         .strokeColor("#ebebeb")
-          //         .stroke();
-        
-          //       // Set the text color based on the row type
-          //       doc
-          //         .fontSize(9)
-          //         .fillColor(rowTextColor) // Use different colors for header and data rows
-          //         .text("-", cellX - 45, cellY + 5, {
-          //           width: cellWidth - 10,
-          //           align: "center",
-          //         });
-          //     }
-          //     else {
-          //       y_axis_length = cellY;
-        
-          //       // Draw the cell border with the specified width
-          //       doc
-          //         .rect(cellX - 50, cellY, cellWidth, rowHeight)
-          //         .lineWidth(0.5) // Set the border width
-          //         .strokeColor("#ebebeb")
-          //         .stroke();
-        
-          //       // Set the text color based on the row type
-          //       doc
-          //         .fontSize(9)
-          //         .fillColor(rowTextColor) // Use different colors for header and data rows
-          //         .text(cell ? cell.toString() : "-", cellX - 45, cellY + 5, {
-          //           width: cellWidth - 10,
-          //           align: "center",
-          //         });
-          //     }
-          //   });
-          //   i++; 
-          // }
-        });
-      }
-
-      //Meter
       function meterTableHeader(y, headers) {
         y = doc.y;
         const initialX = 65;
@@ -1241,225 +795,6 @@ exports.getPlantProfilePDFService = async (plantId) => {
         });
         currentX = initialX;
       }
-      function meterTable(doc, y_axis, tableData) {
-        let y = doc.y;
-        const initialX = 65;
-        let currentX = initialX;
-        let rowHeight = 15;
-        let cellWidth = 68.25;
-        const headerBackgroundColor = "#FFFFFF"; // White background for the header row
-        const headerTextColor = "#000000"; // Black text color for the header row
-        const rowBackgroundColor = "#FFFFFF"; // White background for the data rows
-        const rowTextColor = "#083f53"; // Black text color for the data rows
-        let newPageCounter = 1;
-        let serialNoCounter = 1;
-        let i = 0
-        let rowSkipCounter = 1;
-
-        for(let row of tableData) {
-          if(row[0].toString().length > 12 || row[1].toString().length > 12) {
-            rowHeight = 25;
-            break;
-          }
-        }
-
-        tableData.forEach((row) => {
-
-          row.splice(0, 0, serialNoCounter);
-          serialNoCounter++;
-
-          let noOfCellFit = (doc.page.height - y - 75) / rowHeight;
-
-          if (newPageCounter > 0 && newPageCounter <= noOfCellFit) {
-            newPageCounter++;
-
-            // Draw the row background with the specified color
-            doc
-              .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-              .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-              .fill(); // Fill the background
-
-            row.forEach((cell, j) => {
-              const cellX = currentX + cellWidth * j;
-              let cellY = y + rowHeight * i;
-
-              if(typeof(cell) == "number") {
-                if(j !== row.length-1) {
-                  y_axis_length = cellY;
-  
-                  // Draw the cell border with the specified width
-                  doc
-                    .rect(cellX, cellY, cellWidth - 50, rowHeight)
-                    .lineWidth(0.5) // Set the border width
-                    .strokeColor("#ebebeb")
-                    .stroke();
-  
-                  // Set the text color based on the row type
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 20, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-
-                }
-                else {
-                  y_axis_length = cellY;
-        
-                  // Draw the cell border with the specified width
-                  doc
-                    .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                    .lineWidth(0.5) // Set the border width
-                    .strokeColor("#ebebeb")
-                    .stroke();
-          
-                  // Set the text color based on the row type
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-              }
-              else if(cell == null) {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text("-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                if(cell.toString().length > 12) {
-                  // rowHeight = 25;
-                  // rowHeigthCounter = 1;
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2 - 5, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-                else {
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-              }
-            });
-            i++;
-            rowSkipCounter++;
-          } 
-          else {
-            newPageCounter = 1;
-            doc.addPage();
-            y = 50;
-            i = 0;
-            rowSkipCounter = 0;
-
-            // Draw the row background with the specified color
-            doc
-              .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-              .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-              .fill(); // Fill the background
-
-            row.forEach((cell, j) => {
-              const cellX = currentX + cellWidth * j;
-              const cellY = y + rowHeight * i;
-
-              if(typeof(cell) == "number") {
-                y_axis_length = cellY;
-
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX, cellY, cellWidth - 50, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text(cell ? cell.toString() : "-", cellX - 20, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else if(cell == null) {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text("-", cellX -45, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text(cell ? cell.toString() : "-", cellX -45, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-            });
-            i++;
-          }
-        });
-      }
-
-      //SCB
       function scbTableHeader(y, headers) {
         y = doc.y
         const initialX = 65;
@@ -1537,226 +872,6 @@ exports.getPlantProfilePDFService = async (plantId) => {
         });
         currentX = initialX;
       }
-      function scbTable(doc, y_axis, tableData) {
-        let y = doc.y;
-        const initialX = 65;
-        let currentX = initialX;
-        let rowHeight = 15;
-        const cellWidth = 68.25;
-        const headerBackgroundColor = "#FFFFFF"; // White background for the header row
-        const headerTextColor = "#000000"; // Black text color for the header row
-        const rowBackgroundColor = "#FFFFFF"; // White background for the data rows
-        const rowTextColor = "#083f53"; // Black text color for the data rows
-        let newPageCounter = 1;
-        let serialNoCounter = 1;
-        let i = 0
-        let rowSkipCounter = 1;
-
-        for(let row of tableData) {
-          if(row[0].toString().length > 12 || row[1].toString().length > 12) {
-            rowHeight = 25;
-            break;
-          }
-        }
-
-        tableData.forEach((row) => {
-
-          row.splice(0, 0, serialNoCounter);
-          serialNoCounter++;
-
-
-          let noOfCellFit = (doc.page.height - y - 70) / rowHeight;
-
-          if (newPageCounter > 0 && newPageCounter <= noOfCellFit) {
-            newPageCounter++;
-
-            // Draw the row background with the specified color
-            doc
-              .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-              .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-              .fill(); // Fill the background
-
-            row.forEach((cell, j) => {
-              
-              const cellX = currentX + cellWidth * j;
-              let cellY =  y + rowHeight * i;
-
-              if(typeof(cell) == "number") {
-                if(j !== row.length-1) {
-                  y_axis_length = cellY;
-  
-                  // Draw the cell border with the specified width
-                  doc
-                    .rect(cellX, cellY, cellWidth - 50, rowHeight)
-                    .lineWidth(0.5) // Set the border width
-                    .strokeColor("#ebebeb")
-                    .stroke();
-  
-                  // Set the text color based on the row type
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 20, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-
-                }
-                else {
-                  y_axis_length = cellY;
-        
-                  // Draw the cell border with the specified width
-                  doc
-                    .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                    .lineWidth(0.5) // Set the border width
-                    .strokeColor("#ebebeb")
-                    .stroke();
-          
-                  // Set the text color based on the row type
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-              }
-              else if(cell == null) {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text("-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                if(cell.toString().length > 12) {
-                  // rowHeight = 25;
-                  // rowHeigthCounter = 1;
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2 - 5, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-                else {
-                  doc
-                    .fontSize(9)
-                    .fillColor(rowTextColor) // Use different colors for header and data rows
-                    .text(cell ? cell.toString() : "-", cellX - 45, cellY + (rowHeight - 9)/2, {
-                      width: cellWidth - 10,
-                      align: "center",
-                    });
-                }
-              }
-            });
-            i++;
-            rowSkipCounter++;
-          } 
-          else {
-            newPageCounter = 1;
-            doc.addPage();
-            y = 50;
-            i = 0;
-            rowSkipCounter = 0;
-            // Draw the row background with the specified color
-            doc
-              .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-              .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-              .fill(); // Fill the background
-
-            row.forEach((cell, j) => {
-              const cellX = currentX + cellWidth * j;
-              const cellY = y + rowHeight * i;
-
-              if(typeof(cell) == "number") {
-                y_axis_length = cellY;
-
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX, cellY, cellWidth - 50, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text(cell ? cell.toString() : "-", cellX - 20, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else if(cell == null) {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text("-", cellX - 45, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text(cell ? cell.toString() : "-", cellX - 45, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-            });
-            i++;
-          }
-        });
-      }
-
-      //WMS
       function wmsTableHeader(y, headers) {
         y = doc.y;
         const initialX = 65;
@@ -1827,7 +942,65 @@ exports.getPlantProfilePDFService = async (plantId) => {
         });
         currentX = initialX;
       }
-      function wmsTable(doc, y_axis, tableData) {
+      function dataLoggerTableHeader(y, headers) {
+        y = doc.y;
+        const initialX = 65;
+        let currentX = initialX;
+        const rowHeight = 15;
+        const cellWidth = 72;
+
+        if(y >= 705) {
+          doc.addPage();
+          y = 50;
+        }
+
+        doc
+          .rect(initialX, y, cellWidth * headers.length - 80, rowHeight) // Draw background for the header row
+          .fillColor("#DCDCDC") // Set the background color to grey
+          .fill(); // Fill the background
+
+        headers.forEach((header) => {
+          if(header === "S No") {
+            doc
+              .fontSize(7)
+              .fillColor("#000000")
+              .text(header, currentX - 1, y + 4, { width: cellWidth - 50, align: "center" });
+            // currentX += cellWidth;
+          }
+          
+          if(header === "Name") {
+            doc
+              .fontSize(9)
+              .fillColor("#000000")
+              .text(header, currentX + 15, y + 4, { width: cellWidth, align: "center" });
+            currentX += cellWidth;
+          }
+          if(header === "Location") {
+            doc
+              .fontSize(9)
+              .fillColor("#000000")
+              .text(header, currentX + 12, y + 4, { width: cellWidth, align: "center" });
+            currentX += cellWidth;
+          }
+          if(header === "Serial No") {
+            doc
+              .fontSize(9)
+              .fillColor("#000000")
+              .text(header, currentX + 8.5, y + 4, { width: cellWidth, align: "center" });
+            currentX += cellWidth;
+          }
+          if(header === "Model No") {
+            doc
+              .fontSize(9)
+              .fillColor("#000000")
+              .text(header, currentX + 5, y + 4, { width: cellWidth, align: "center" });
+            currentX += cellWidth;
+          }
+        });
+        currentX = initialX;
+      }
+      //Table
+      function table(doc, y_axis, tableData) {
         let y = doc.y;
         const initialX = 65;
         let currentX = initialX;
@@ -1837,13 +1010,12 @@ exports.getPlantProfilePDFService = async (plantId) => {
         const headerTextColor = "#000000"; // Black text color for the header row
         const rowBackgroundColor = "#FFFFFF"; // White background for the data rows
         const rowTextColor = "#083f53"; // Black text color for the data rows
-        let newPageCounter = 1;
         let serialNoCounter = 1;
         let i = 0
         let rowSkipCounter = 1;
 
         for(let row of tableData) {
-          if(row[0].toString().length) {
+          if(row[0]?.toString().length > 12 || row[1]?.toString().length > 12) {
             rowHeight = 25;
             break;
           }
@@ -1854,12 +1026,6 @@ exports.getPlantProfilePDFService = async (plantId) => {
           row.splice(0, 0, serialNoCounter);
           serialNoCounter++;
 
-
-          let noOfCellFit = (doc.page.height - y - 70) / rowHeight;
-
-          if (newPageCounter > 0 && newPageCounter <= noOfCellFit) {
-            newPageCounter++;
-
             // Draw the row background with the specified color
             doc
               .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
@@ -1867,9 +1033,17 @@ exports.getPlantProfilePDFService = async (plantId) => {
               .fill(); // Fill the background
 
             row.forEach((cell, j) => {
+
               
               const cellX = currentX + cellWidth * j;
               let cellY =  y + rowHeight * i;
+
+              if(cellY >= 705) {
+                doc.addPage();
+                y = 50;
+                i = 0;
+                cellY =  y + rowHeight * i;
+              }
 
               if(typeof(cell) == "number") {
                 if(j !== row.length-1) {
@@ -1943,8 +1117,6 @@ exports.getPlantProfilePDFService = async (plantId) => {
         
                 // Set the text color based on the row type
                 if(cell.toString().length > 12) {
-                  // rowHeight = 25;
-                  // rowHeigthCounter = 1;
                   doc
                     .fontSize(9)
                     .fillColor(rowTextColor) // Use different colors for header and data rows
@@ -1966,83 +1138,6 @@ exports.getPlantProfilePDFService = async (plantId) => {
             });
             i++;
             rowSkipCounter++;
-          } 
-          else {
-            newPageCounter = 1;
-            doc.addPage();
-            y = 50;
-            i = 0;
-            rowSkipCounter = 0;
-            // Draw the row background with the specified color
-            doc
-              .rect(initialX, y + rowHeight * i, cellWidth * row.length, rowHeight)
-              .fillColor(i === 0 ? headerBackgroundColor : rowBackgroundColor) // Use different colors for header and data rows
-              .fill(); // Fill the background
-
-            row.forEach((cell, j) => {
-              const cellX = currentX + cellWidth * j;
-              const cellY = y + rowHeight * i;
-
-              if(typeof(cell) == "number") {
-                y_axis_length = cellY;
-
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX, cellY, cellWidth - 50, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text(cell ? cell.toString() : "-", cellX - 20, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else if(cell == null) {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text("-", cellX - 45, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-              else {
-                y_axis_length = cellY;
-        
-                // Draw the cell border with the specified width
-                doc
-                  .rect(cellX - 50, cellY, cellWidth, rowHeight)
-                  .lineWidth(0.5) // Set the border width
-                  .strokeColor("#ebebeb")
-                  .stroke();
-        
-                // Set the text color based on the row type
-                doc
-                  .fontSize(9)
-                  .fillColor(rowTextColor) // Use different colors for header and data rows
-                  .text(cell ? cell.toString() : "-", cellX - 45, cellY + 5, {
-                    width: cellWidth - 10,
-                    align: "center",
-                  });
-              }
-            });
-            i++;
-          }
         });
       }
 
